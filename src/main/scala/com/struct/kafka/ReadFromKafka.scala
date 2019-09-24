@@ -1,5 +1,6 @@
 package com.struct.kafka
 
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{ColumnName, SparkSession}
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructField, StructType}
@@ -9,10 +10,10 @@ object ReadFromKafka {
 
 
   def main(args:Array[String]): Unit ={
+    Logger.getLogger("org").setLevel(Level.ERROR)
       val spark = SparkSession
       .builder
       .appName("Read-Kafka-Topic")
-      .master("local")
       .getOrCreate()
 
     import spark.implicits._
@@ -21,8 +22,8 @@ object ReadFromKafka {
     val df = spark
       .readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", "localhost:9092")
-      .option("subscribe", "struct_streaming")
+      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+      .option("subscribe", "str_stre")
       .load()
 
     val mySchema = StructType(Array(
@@ -48,7 +49,7 @@ object ReadFromKafka {
       .start()
       .awaitTermination()
 
-
+      spark.stop()
   }
 
 

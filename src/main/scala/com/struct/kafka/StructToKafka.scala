@@ -10,10 +10,11 @@ object StructToKafka {
   val spark = SparkSession
     .builder
     .appName("Spark-Kafka-Integration")
-    .master("local")
     .getOrCreate()
 
-  //Define the Schema
+
+import spark.implicits._
+      //Define the Schema
 
   val mySchema = StructType(Array(
     StructField("HSCode", IntegerType),
@@ -24,17 +25,23 @@ object StructToKafka {
   ))
 
   //Create the Streaming DataFrame
-  val streamingDataFrame = spark.readStream.schema(mySchema).csv("./src/main/resources/2018-2010_export.csv")
+  val streamingDataFrame = spark.readStream.schema(mySchema).csv("/user/hdfs/")
 
     //Publish the Stream to Kafka
 
-  streamingDataFrame.selectExpr("CAST(id AS STRING) AS key", "to_json(struct(*)) AS value").
+  val query=streamingDataFrame.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value").
     writeStream
     .format("kafka")
-    .option("topic", "struct_streaming")
-    .option("kafka.bootstrap.servers", "localhost:9092")
-    .option("checkpointLocation", "path to your local dir")
+    .option("topic", "str_stre")
+    .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+    .outputMode("update")
+    .option("checkpointLocation", "/home/hdfs/checkpoint")
     .start()
+
+    query.awaitTermination()
+
+    spark.stop
+
   }
 
 }
