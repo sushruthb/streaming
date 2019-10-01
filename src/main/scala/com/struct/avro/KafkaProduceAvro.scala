@@ -64,9 +64,9 @@ object KafkaProduceAvro {
       .writeStream
       .format("kafka")
       .outputMode("append")
-      .option("kafka.bootstrap.servers", "192.168.1.100:9092")
+      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
       .option("topic", "avro_topic")
-      .option("checkpointLocation","c:/tmp")
+      .option("checkpointLocation","/home/checkpoint")
       .start()
       .awaitTermination()
   }
