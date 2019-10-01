@@ -4,10 +4,12 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.avro.to_avro
 import org.apache.spark.sql.functions.{col, from_json, struct}
 import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
+import org.apache.log4j._
+
 object KafkaProduceAvro {
 
   def main(args: Array[String]): Unit = {
-
+    Logger.getLogger("org").setLevel(Level.ERROR)
     val spark: SparkSession = SparkSession.builder()
       .master("local[1]")
       .appName("SparkByExample.com")
