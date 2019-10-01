@@ -26,8 +26,6 @@ object WriteToKafka {
       .option("subscribe", "str_stre")
       .load()
 
-
-
     val mySchema = StructType(Array(
       StructField("HSCode", IntegerType),
       StructField("Commodity", StringType),
@@ -44,12 +42,21 @@ object WriteToKafka {
 
     //Write Dataframe to Kafka
 
-    df1.writeStream
+   /* df1.writeStream
       .format("kafka")
       .option("topic", "Struct_Streaming")
+      .outputMode("update")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
       .option("checkpointLocation", "/home/hdfs/checkpoint")
+      .start()*/
+
+    val ds = df1
+      .writeStream
+      .format("kafka")
+      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+      .option("topic", "Struct_Streaming")
       .start()
+      .awaitTermination()
 
       spark.stop()
   }

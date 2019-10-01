@@ -1,9 +1,9 @@
 package com.struct.kafka
 
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.{ColumnName, SparkSession}
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
-import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructField, StructType}
+import org.apache.spark.sql.types._
 
 object ReadFromKafka {
 
@@ -51,10 +51,7 @@ object ReadFromKafka {
       .start()
       .awaitTermination()
 
-
-
-
-      spark.stop()
+     spark.stop()
   }
 
 
