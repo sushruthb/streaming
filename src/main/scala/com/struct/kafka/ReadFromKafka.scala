@@ -7,7 +7,7 @@ import org.apache.spark.sql.types._
 
 object ReadFromKafka {
 
-
+  Logger.getLogger("org").setLevel(Level.ERROR)
 
   def main(args:Array[String]): Unit ={
     Logger.getLogger("org").setLevel(Level.ERROR)
