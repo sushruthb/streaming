@@ -9,9 +9,11 @@ import org.apache.log4j._
 object KafkaProduceAvro {
 
   def main(args: Array[String]): Unit = {
+
     Logger.getLogger("org").setLevel(Level.ERROR)
-    val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
+
+    val spark: SparkSession = SparkSession
+      .builder()
       .appName("SparkByExample.com")
       .getOrCreate()
 

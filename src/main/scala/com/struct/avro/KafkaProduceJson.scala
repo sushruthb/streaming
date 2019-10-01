@@ -5,9 +5,11 @@ import org.apache.log4j._
 
 object KafkaProduceJson {
   def main(args:Array[String]): Unit ={
+
     Logger.getLogger("org").setLevel(Level.ERROR)
 
-    val spark: SparkSession = SparkSession.builder()
+    val spark: SparkSession = SparkSession
+      .builder()
       .appName("SparkByExamples.com")
       .getOrCreate()
 
