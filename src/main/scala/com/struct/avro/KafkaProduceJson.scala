@@ -9,7 +9,7 @@ object KafkaProduceJson {
     Logger.getLogger("org").setLevel(Level.ERROR)
 
 
-    val spark: SparkSession = SparkSession
+    val spark = SparkSession
       .builder()
       .appName("SparkByExamples.com")
       .getOrCreate()
