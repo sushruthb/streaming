@@ -43,16 +43,16 @@ object KafkaProduceJson {
 
     import org.apache.spark.sql.functions.from_json
 
-    //streamingDataFrame.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value").
-
-    val df1 = df.selectExpr("CAST(firstname AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
-      .select(from_json($"value", mySchema).as("data"), $"timestamp")
-      .select("data.*", "timestamp")
 
 
-    df1.printSchema()
+  //  val df1 = df.selectExpr("CAST(firstname AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
+   //   .select(from_json($"value", mySchema).as("data"), $"timestamp")
+  //    .select("data.*", "timestamp")
 
-    val query = df1
+
+    df.printSchema()
+
+    val query = df.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value")
       .writeStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
