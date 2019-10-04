@@ -25,29 +25,15 @@ object KafkaProduceJson {
     val columns = Seq("id","firstname","middlename","lastname","dob_year",
       "dob_month","gender","salary")
     import spark.implicits._
+
+
     val df = data.toDF(columns:_*)
 
-    val ds = df.toJSON
+    val ds = df.toDF().toJSON
 
-    val mySchema = StructType(Array(
-      StructField("firstname", StringType),
-      StructField("middlename", StringType),
-      StructField("lastname", StringType),
-      StructField("dob_year", IntegerType),
-      StructField("dob_month", IntegerType),
-      StructField("gender", StringType),
-      StructField("salary", IntegerType)
-    ))
+    ds.printSchema()
 
-    import org.apache.spark.sql.functions.from_json
-
-    val df1 = df.selectExpr("CAST(value AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
-      .select(from_json($"value", mySchema).as("data"), $"timestamp")
-      .select("data.*", "timestamp")
-
-    df1.printSchema()
-
-    val query = df1
+    val query = ds
       .writeStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
