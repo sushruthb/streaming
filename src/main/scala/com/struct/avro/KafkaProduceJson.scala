@@ -2,7 +2,7 @@ package com.struct.avro
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
-import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
+import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructField, StructType}
 
 object KafkaProduceJson {
   def main(args:Array[String]): Unit ={
@@ -29,11 +29,28 @@ object KafkaProduceJson {
 
     val df = data.toDF(columns:_*)
 
-    val ds = df.toDF().toJSON
+   // val ds = df.toDF().toJSON
 
-    ds.printSchema()
+    val mySchema = StructType(Array(
+      StructField("firstname", StringType),
+      StructField("middlename", StringType),
+      StructField("lastname", StringType),
+      StructField("dob_year", IntegerType),
+      StructField("dob_month", IntegerType),
+      StructField("gender", StringType),
+      StructField("salary", IntegerType)
+    ))
 
-    val query = ds
+    import org.apache.spark.sql.functions.from_json
+
+    val df1 = df.selectExpr("CAST(value AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
+      .select(from_json($"value", mySchema).as("data"), $"timestamp")
+      .select("data.*", "timestamp")
+
+
+    df1.printSchema()
+
+    val query = df1
       .writeStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
