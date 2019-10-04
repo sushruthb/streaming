@@ -41,6 +41,8 @@ object KafkaProduceJson {
       StructField("salary", IntegerType)
     ))
 
+
+
     import org.apache.spark.sql.functions.from_json
 
 

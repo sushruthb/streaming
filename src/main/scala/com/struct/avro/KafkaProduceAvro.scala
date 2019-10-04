@@ -10,9 +10,7 @@ object KafkaProduceAvro {
 
   def main(args: Array[String]): Unit = {
 
-    Logger.getLogger("org").setLevel(Level.ERROR)
-
-    val spark: SparkSession = SparkSession
+      val spark= SparkSession
       .builder()
       .appName("SparkByExample.com")
       .getOrCreate()
@@ -20,7 +18,7 @@ object KafkaProduceAvro {
     /*
     Disable logging as it writes too much log
      */
-    spark.sparkContext.setLogLevel("ERROR")
+    Logger.getLogger("org").setLevel(Level.ERROR)
 
     /*
     This consumes JSON data from Kafka
@@ -68,7 +66,7 @@ object KafkaProduceAvro {
       .outputMode("append")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
       .option("topic", "avro_topic")
-      .option("checkpointLocation","/home/checkpoint")
+      .option("checkpointLocation","/home/hdfs/checkpoint")
       .start()
       .awaitTermination()
   }
