@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b995f95fe5b1784f609b.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceAvro.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceAvro.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,6 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4694007095290" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3109977273" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="3661142816" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
@@ -103,7 +103,6 @@
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$/../ML" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
   </component>

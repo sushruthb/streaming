@@ -7,7 +7,10 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 import org.apache.log4j._
 
 object KafkaProduceAvro {
-
+    /*
+      Disable logging as it writes too much log
+       */
+  Logger.getLogger("org").setLevel(Level.ERROR)
   def main(args: Array[String]): Unit = {
 
       val spark= SparkSession
@@ -15,10 +18,7 @@ object KafkaProduceAvro {
       .appName("SparkByExample.com")
       .getOrCreate()
 
-    /*
-    Disable logging as it writes too much log
-     */
-    Logger.getLogger("org").setLevel(Level.ERROR)
+
 
     /*
     This consumes JSON data from Kafka
