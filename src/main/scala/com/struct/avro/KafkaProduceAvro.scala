@@ -5,6 +5,7 @@ import org.apache.spark.sql.avro.to_avro
 import org.apache.spark.sql.functions.{col, from_json, struct}
 import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 import org.apache.log4j._
+import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 
 object KafkaProduceAvro {
     /*
@@ -60,7 +61,8 @@ object KafkaProduceAvro {
       * And send this Avro data to Kafka topic
       */
 
-    personDF.select(to_avro(struct("data.*")) as "value")
+    personDF.selectExpr(to_avro(struct("data.*")) as "value", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)].select(from_json($"value", mySchema).as("data"), $"timestamp",)
+      .select("data.*", "timestamp")
       .writeStream
       .format("kafka")
       .outputMode("append")

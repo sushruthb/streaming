@@ -4,6 +4,7 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 import org.apache.spark.sql.types._
+import com.struct.kafka.KafkaSink
 
 object WriteToKafka {
 
@@ -50,13 +51,24 @@ object WriteToKafka {
       .option("checkpointLocation", "/home/hdfs/checkpoint")
       .start()*/
 
-    val ds = df1
+    val topic = "str_stre"
+    val brokers = "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667"
+
+    val writer = new KafkaSink(topic, brokers)
+
+    val query = df1
+      .writeStream
+      .foreach(writer)
+      .outputMode("update")
+      .start()
+
+/*    val ds = df1
       .writeStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
       .option("topic", "Struct_Streaming")
       .start()
-      .awaitTermination()
+      .awaitTermination()*/
 
       spark.stop()
   }
