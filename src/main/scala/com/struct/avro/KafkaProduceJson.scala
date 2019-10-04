@@ -57,6 +57,8 @@ object KafkaProduceJson {
       .format("kafka")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
       .option("topic", "text_topic")
+      .outputMode("update")
+      .option("checkpointLocation", "/home/hdfs/checkpoint")
       .start()
 
   }
