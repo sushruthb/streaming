@@ -48,7 +48,7 @@ object KafkaProduceAvro {
     /*
     Converts JSON string to DataFrame
      */
-    val personDF = df.selectExpr("CAST(value AS STRING)","to_json(struct(*)) AS value") // First convert binary to string
+    val personDF = df.selectExpr("CAST(value AS STRING)") // First convert binary to string
       .select(from_json(col("value"), schema).as("data"))
 
 
