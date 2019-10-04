@@ -15,7 +15,7 @@ object KafkaProduceJson {
       .appName("SparkByExamples.com")
       .getOrCreate()
 
-    val data = Seq((1,"James ","","Smith",2018,1,"M",3000),
+    val data1 = Seq((1,"James ","","Smith",2018,1,"M",3000),
       (2,"Michael ","Rose","",2010,3,"M",4000),
       (3,"Robert ","","Williams",2010,3,"M",4000),
       (4,"Maria ","Anne","Jones",2005,5,"F",4000),
@@ -27,7 +27,7 @@ object KafkaProduceJson {
     import spark.implicits._
 
 
-    val df = data.toDF(columns:_*)
+    val df = data1.toDF(columns:_*)
 
    // val ds = df.toDF().toJSON
 
