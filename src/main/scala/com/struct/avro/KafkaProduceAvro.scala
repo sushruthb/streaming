@@ -28,7 +28,7 @@ object KafkaProduceAvro {
     val df = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
-      .option("subscribe", "json_topic")
+      .option("subscribe", "text_topic")
       .option("startingOffsets", "earliest") // From starting
       .load()
 
