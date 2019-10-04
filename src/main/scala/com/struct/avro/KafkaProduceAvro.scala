@@ -48,8 +48,8 @@ object KafkaProduceAvro {
     /*
     Converts JSON string to DataFrame
      */
-    val personDF = df.selectExpr("CAST(value AS STRING)") // First convert binary to string
-      .select(from_json(col("value"), schema).as("data"))
+    val personDF = df.selectExpr("CAST(firstname AS STRING)") // First convert binary to string
+      .select(from_json(col("firstname"), schema).as("data"))
 
 
     personDF.printSchema()
