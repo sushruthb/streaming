@@ -22,18 +22,18 @@ object AvroSink {
       import spark.implicits._
 
       val df = spark
-        .readStream
+   /*     .readStream
         .format("kafka")
         .option("kafka.bootstrap.servers", servers)
         .option("subscribe", "text_topic")
         .load()
         .select(
           from_avro($"key", SchemaBuilder.builder().stringType() ).as("key"),
-          from_avro($"value", SchemaBuilder.builder().intType()).as("value"))
+          from_avro($"value", SchemaBuilder.builder().intType()).as("value"))*/
 
       // Convert structured data to binary from string (key column) and
       // int (value column) and save them to a Kafka topic.
-      df
+     /* df
         .select(
           to_avro($"key").as("key"),
           to_avro($"value").as("value"))
@@ -41,7 +41,7 @@ object AvroSink {
         .format("kafka")
         .option("kafka.bootstrap.servers", servers)
         .option("topic", topic)
-       // .save()
+       // .save()*/
     }
 
 
