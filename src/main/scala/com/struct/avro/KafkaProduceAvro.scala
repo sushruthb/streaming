@@ -55,13 +55,24 @@ object KafkaProduceAvro {
 
     personDF.printSchema()
 
+    val topic = "avro_topic"
+    val brokers = "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667"
+
+    val writer = new KafkaSink(topic, brokers)
+
+    val query = personDF
+      .writeStream
+      .foreach(writer)
+      .outputMode("update")
+      .start()
+
 
     /*
       * Convert DataFrame columns to Avro format and name it as "value"
       * And send this Avro data to Kafka topic
       */
 
-    personDF.select(to_avro(struct("data.*")) as "value")
+   /* personDF.select(to_avro(struct("data.*")) as "value")
       .writeStream
       .format("kafka")
       .outputMode("append")
@@ -69,7 +80,7 @@ object KafkaProduceAvro {
       .option("topic", "avro_topic")
       .option("checkpointLocation","/home/hdfs/checkpoint")
       .start()
-      .awaitTermination()
+      .awaitTermination()*/
   }
 
 
