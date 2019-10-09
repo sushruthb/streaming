@@ -61,8 +61,7 @@ object KafkaProduceAvro {
       * And send this Avro data to Kafka topic
       */
 
-    personDF.selectExpr(to_avro(struct("data.*")) as "value", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)].select(from_json($"value", mySchema).as("data"), $"timestamp",)
-      .select("data.*", "timestamp")
+    personDF.selectExpr(to_avro(struct("data.*")) as "value")
       .writeStream
       .format("kafka")
       .outputMode("append")
