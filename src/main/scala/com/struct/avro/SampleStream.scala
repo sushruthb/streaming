@@ -32,12 +32,16 @@ object SampleStream {
         .select(get_json_object(($"value").cast("string"), "$.zip").alias("zip"))
         .groupBy($"zip")
         .count()
+    streamingSelectDF.printSchema()
+
 
     var streamingSelectDF1 =
       streamingInputDF
         .select(get_json_object(($"value").cast("string"), "$.zip").alias("zip"), get_json_object(($"value").cast("string"), "$.hittime").alias("hittime"))
         .groupBy($"zip", window($"hittime".cast("timestamp"), "10 minute", "5 minute", "2 minute"))
         .count()
+
+
 
     import org.apache.spark.sql.streaming.ProcessingTime
 
