@@ -7,6 +7,8 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 import org.apache.log4j._
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 
+import com.struct.kafka.KafkaSink
+
 object KafkaProduceAvro {
     /*
       Disable logging as it writes too much log
