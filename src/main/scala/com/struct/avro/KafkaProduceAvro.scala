@@ -57,18 +57,25 @@ object KafkaProduceAvro {
 
 
     personDF.printSchema()
-
+    import spark.implicits._
     val topic = "avro_topic"
     val brokers = "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667"
-
+    import org.apache.spark.sql.functions.from_json
     val writer = new KafkaSink(topic, brokers)
 
-    val query = personDF
+    val query = personDF.selectExpr("CAST(value AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
+      .select(from_json("value", schema).as("data"), "timestamp")
+      .select("data.*", "timestamp")
       .writeStream
-      .foreach(writer)
+      .format("kafka")
+      .option("kafka.bootstrap.servers", brokers)
+      .option("topic", "t")
+      .save()
+
+      /*.foreach(writer)
       .outputMode("update")
       .start()
-
+*/
 
     /*
       * Convert DataFrame columns to Avro format and name it as "value"
