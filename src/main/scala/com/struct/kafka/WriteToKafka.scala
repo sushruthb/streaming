@@ -58,7 +58,7 @@ object WriteToKafka {
 
     val query = df1
       .writeStream
-      .foreach(writer)
+      .foreach(writer )
       .outputMode("update")
       .start()
 
