@@ -63,14 +63,14 @@ object KafkaProduceAvro {
     import org.apache.spark.sql.functions.from_json
     val writer = new KafkaSink(topic, brokers)
 
-    val query = personDF.selectExpr("CAST(value AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
+   /* val query = personDF.selectExpr("CAST(value AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
       .select(from_json("value", schema).as("data"), "timestamp")
       .select("data.*", "timestamp")
       .writeStream
       .format("kafka")
       .option("kafka.bootstrap.servers", brokers)
       .option("topic", "t")
-      .save()
+      .save()*/
 
       /*.foreach(writer)
       .outputMode("update")
