@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % "2.4.0",
   "org.apache.spark" %% "spark-hive" % "2.4.0",
   "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.0",
-  "org.apache.spark" %% "spark-avro_2.11" % "2.4.0"
+  "org.apache.spark" %% "spark-avro" % "2.4.0"
 )
 resolvers += "confluent" at "http://packages.confluent.io/maven/"
 resolvers += "MavenCentral" at "https://mvnrepository.com/"
