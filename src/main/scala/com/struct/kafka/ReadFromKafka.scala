@@ -48,11 +48,12 @@ object ReadFromKafka {
 
     df1.writeStream
       .format("console")
+      .outputMode("complete")
       .option("truncate","false")
       .start()
       .awaitTermination()
 
-     spark.stop()
+
   }
 
 
