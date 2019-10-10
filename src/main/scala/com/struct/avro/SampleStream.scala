@@ -52,5 +52,6 @@ object SampleStream {
         .outputMode("complete")
         .trigger(ProcessingTime("25 seconds"))
         .start()
+      .awaitTermination()
   }
 }
