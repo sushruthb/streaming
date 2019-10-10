@@ -30,7 +30,7 @@ object KafkaProduceJson {
     val ds = df.toJSON
     ds.printSchema()
 
-    val query = ds.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
+    val query = ds.selectExpr("CAST(id AS STRING)", "CAST(value AS STRING)")
       .writeStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
