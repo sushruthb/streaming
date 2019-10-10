@@ -9,8 +9,8 @@ scalaVersion := "2.11.12"
 libraryDependencies ++= Seq(
 
   "org.apache.spark" %% "spark-core" % "2.4.0" % "provided",
-  "org.apache.kafka" % "kafka-clients" % "0.11.0.1",
-  "org.apache.kafka" %% "kafka" % "2.0.0",
+  "org.apache.kafka" % "kafka-clients" % "2.3.0",
+  "org.apache.kafka" %% "kafka" % "2.3.0",
   "org.apache.spark" % "spark-streaming_2.11" % "2.4.0",
   "org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.0",
   "org.apache.spark" %% "spark-sql" % "2.4.0",
@@ -26,6 +26,7 @@ libraryDependencies ++= Seq(
  // "com.lihaoyi" %% "ujson" % "0.6.6" % "compile"
 )
 resolvers += "confluent" at "http://packages.confluent.io/maven/"
+resolvers += "MavenCentral" at "https://mvnrepository.com/"
 resolvers += Resolver.url("bintray-sbt-plugins", url("https://dl.bintray.com/eed3si9n/sbt-plugins/"))(Resolver.ivyStylePatterns)
 
 assemblyMergeStrategy in assembly := {
