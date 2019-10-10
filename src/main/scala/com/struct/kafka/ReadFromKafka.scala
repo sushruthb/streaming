@@ -48,7 +48,7 @@ object ReadFromKafka {
 
     df1.writeStream
       .format("console")
-      .outputMode("complete")
+      .outputMode("append")
       .option("truncate","false")
       .start()
       .awaitTermination()
