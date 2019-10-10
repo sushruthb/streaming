@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "2.4.0" % "provided",
   "org.apache.kafka" % "kafka-clients" % "2.3.0",
   "org.apache.kafka" %% "kafka" % "2.3.0",
-  "org.apache.spark" % "spark-streaming_2.11" % "2.4.0",
+  "org.apache.spark" %% "spark-streaming" % "2.4.0",
   "org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.0",
   "org.apache.spark" %% "spark-sql" % "2.4.0",
   "org.apache.spark" %% "spark-hive" % "2.4.0",
