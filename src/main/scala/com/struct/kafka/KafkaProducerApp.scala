@@ -1,11 +1,13 @@
 package com.struct.kafka
 
 import java.util.Properties
-import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
-object KafkaProducerApp extends App {
 
+import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
+import org.apache.log4j.{Level, Logger}
+object KafkaProducerApp extends App {
+  Logger.getLogger("org").setLevel(Level.ERROR)
   val props:Properties = new Properties()
-  props.put("bootstrap.servers","192.168.1.128:9092")
+  props.put("bootstrap.servers","10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
   props.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer")
   props.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer")
   props.put("acks","all")
