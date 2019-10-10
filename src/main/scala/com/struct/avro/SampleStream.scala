@@ -19,6 +19,8 @@ object SampleStream {
         .option( "kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667" )
         .option( "subscribe", "text_topic" )
         .option( "startingOffsets", "earliest" )
+        .option("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+        .option("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
         .option( "minPartitions", "10" )
         .option( "failOnDataLoss", "true" )
         .load()
