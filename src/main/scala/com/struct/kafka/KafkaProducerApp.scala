@@ -11,7 +11,7 @@ object KafkaProducerApp extends App {
   props.put("acks","all")
 
   val producer = new KafkaProducer[String, String](props)
-  val topic = "text_topic"
+  val topic = "txt_topic"
 
   try {
     for (i <- 0 to 15) {
