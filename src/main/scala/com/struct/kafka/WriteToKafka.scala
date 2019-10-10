@@ -37,9 +37,8 @@ object WriteToKafka {
 
     import org.apache.spark.sql.functions.from_json
 
-    val df1 = df.selectExpr("CAST(value AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
-      .select(from_json($"value", mySchema).as("data"), $"timestamp")
-      .select("data.*", "timestamp")
+    val df1 = df.selectExpr("CAST(input_id AS STRING) AS key", "to_json(struct(*)) AS value").as[(String, String)]
+
 
     //Write Dataframe to Kafka
 
@@ -55,20 +54,13 @@ object WriteToKafka {
     val brokers = "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667"
 
     val writer = new KafkaSink(topic, brokers)
-    /*
-        val query = df1
-          .writeStream
-          .foreach(writer )
-          .outputMode("update")
-          .start()
 
-       val ds = df1
-          .writeStream
-          .format("kafka")
-          .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
-          .option("topic", "Struct_Streaming")
-          .start()
-          .awaitTermination()*/
+    val query = df1
+      .writeStream
+      .foreach(writer)
+      .outputMode("update")
+      .start()
+      .awaitTermination()
 
       spark.stop()
   }
