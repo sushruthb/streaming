@@ -10,7 +10,8 @@ import org.apache.spark.sql.functions.{get_json_object, json_tuple}
 object AvroSink {
     def main(args:Array[String]): Unit ={
       Logger.getLogger("org").setLevel(Level.ERROR)
-      val conf=ConfigFactory.load().getConfig(args(0))
+      val conf=ConfigFactory.load()
+
 
       val spark= SparkSession
         .builder()

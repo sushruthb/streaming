@@ -10,7 +10,7 @@ object ReadFromKafka {
 
  def main(args:Array[String]): Unit ={
     Logger.getLogger("org").setLevel(Level.ERROR)
-    val conf=ConfigFactory.load().getConfig(args(0))
+    val conf=ConfigFactory.load()
       val spark = SparkSession
       .builder
       .appName("Read-Kafka-Topic")

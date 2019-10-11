@@ -3,15 +3,19 @@ package com.struct.kafka
 import java.util.{Collections, Properties}
 import java.util.regex.Pattern
 
+import com.typesafe.config.ConfigFactory
 import org.apache.kafka.clients.consumer.KafkaConsumer
 import org.apache.log4j.{Level, Logger}
 
 import scala.collection.JavaConverters._
 object KafkaConsumerSubscribeApp extends App {
   Logger.getLogger("org").setLevel(Level.ERROR)
+  val conf=ConfigFactory.load()
+  val servers = conf.getString("prod.kafa.brokers")
+
   val props:Properties = new Properties()
   props.put("group.id", "test")
-  props.put("bootstrap.servers","10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+  props.put("bootstrap.servers",servers)
   props.put("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer")
   props.put("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer")
   props.put("enable.auto.commit", "true")

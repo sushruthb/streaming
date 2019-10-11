@@ -22,7 +22,7 @@ object KafkaProduceAvro {
       .appName("SparkByExample.com")
       .getOrCreate()
 
-  val conf=ConfigFactory.load().getConfig(args(0))
+  val conf=ConfigFactory.load()
 
     /*
     This consumes JSON data from Kafka
@@ -73,7 +73,7 @@ object KafkaProduceAvro {
       .writeStream
       .format("kafka")
       .outputMode("append")
-      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+      .option("kafka.bootstrap.servers", brokers)
       .option("topic", "avro_topic")
       .option("checkpointLocation","/home/hdfs/checkpoint")
       .start()

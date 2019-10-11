@@ -1,5 +1,6 @@
 package com.struct.kafka
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 
@@ -9,6 +10,8 @@ object KafkaProduceJson {
 
   def main(args:Array[String]): Unit ={
     Logger.getLogger("org").setLevel(Level.ERROR)
+    val conf=ConfigFactory.load()
+    val servers = conf.getString("prod.kafa.brokers")
 
     val spark= SparkSession
       .builder()
@@ -32,7 +35,7 @@ object KafkaProduceJson {
     val query = ds.selectExpr( "CAST(value AS STRING), to_json(struct(*)) AS value")
       .writeStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+      .option("kafka.bootstrap.servers", servers)
       .option("topic", "text_topic")
       .start()
 
