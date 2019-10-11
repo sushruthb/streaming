@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="841a905e-ec46-4045-8333-de1fe5f1dc8c" name="Default Changelist" comment="added new files">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_config_1_3_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e8bc7ce905e2144eaade$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e8bc7ce905e2144eaade.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e8bc7ce905e2144eaade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/avro/AvroSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/AvroSink.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceAvro.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceAvro.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceJson.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceJson.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/avro/SampleStream.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/SampleStream.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/ReadFromKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/ReadFromKafka.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/StructToKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/StructToKafka.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/WriteToKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/WriteToKafka.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +103,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="3388324586" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="2079084150" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="3661142816" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>

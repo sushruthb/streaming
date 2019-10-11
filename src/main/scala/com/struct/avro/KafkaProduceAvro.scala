@@ -7,8 +7,8 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 import org.apache.log4j._
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 import org.apache.spark.sql._
-
 import com.struct.kafka.KafkaSink
+import com.typesafe.config.ConfigFactory
 
 object KafkaProduceAvro {
     /*
@@ -22,14 +22,14 @@ object KafkaProduceAvro {
       .appName("SparkByExample.com")
       .getOrCreate()
 
-
+  val conf=ConfigFactory.load().getConfig(args(0))
 
     /*
     This consumes JSON data from Kafka
      */
     val df = spark.readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+      .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
       .option("subscribe", "json_topic")
       .option("startingOffsets", "earliest") // From starting
       .load()

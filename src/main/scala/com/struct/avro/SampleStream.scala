@@ -1,5 +1,6 @@
 package com.struct.avro
 
+import com.typesafe.config.ConfigFactory
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
 
@@ -9,6 +10,8 @@ object SampleStream {
 
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
+
+    val conf=ConfigFactory.load().getConfig(args(0))
     val spark = SparkSession
       .builder()
       .appName( "SparkByExample.com" )
@@ -16,7 +19,7 @@ object SampleStream {
     var streamingInputDF =
       spark.readStream
         .format( "kafka" )
-        .option( "kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667" )
+        .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
         .option( "subscribe", "text_topic" )
         .option( "startingOffsets", "earliest" )
         .option("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")

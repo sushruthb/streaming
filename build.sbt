@@ -16,9 +16,12 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % "2.4.0",
   "org.apache.spark" %% "spark-hive" % "2.4.0",
   "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.0",
-  "org.apache.spark" %% "spark-avro" % "2.4.0"
+  "org.apache.spark" %% "spark-avro" % "2.4.0",
+  "com.typesafe" % "config" % "1.3.2"
+
 )
 resolvers += "confluent" at "http://packages.confluent.io/maven/"
+resolvers += "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/"
 resolvers += "MavenCentral" at "https://mvnrepository.com/"
 resolvers += Resolver.url("bintray-sbt-plugins", url("https://dl.bintray.com/eed3si9n/sbt-plugins/"))(Resolver.ivyStylePatterns)
 

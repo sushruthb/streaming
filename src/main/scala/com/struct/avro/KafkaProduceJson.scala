@@ -1,4 +1,6 @@
 package com.struct.avro
+import com.typesafe.config.ConfigFactory
+import org.apache.commons.configuration.ConfigurationFactory
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
@@ -8,6 +10,7 @@ object KafkaProduceJson {
   def main(args:Array[String]): Unit ={
 
     Logger.getLogger("org").setLevel(Level.ERROR)
+    val conf=ConfigFactory.load().getConfig(args(0))
 
 
     val spark = SparkSession
@@ -57,7 +60,7 @@ object KafkaProduceJson {
     val query = df.selectExpr("CAST(firstname AS STRING) AS key", "to_json(struct(*)) AS value")
       .write
       .format("kafka")
-      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+      .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
       .option("topic", "text_topic")
       .save()
 

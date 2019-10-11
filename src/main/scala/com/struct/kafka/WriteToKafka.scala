@@ -5,6 +5,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 import org.apache.spark.sql.types._
 import com.struct.kafka._
+import com.typesafe.config.ConfigFactory
 
 object WriteToKafka {
 
@@ -12,6 +13,7 @@ object WriteToKafka {
 
   def main(args:Array[String]): Unit ={
     Logger.getLogger("org").setLevel(Level.ERROR)
+    val conf=ConfigFactory.load().getConfig(args(0))
       val spark = SparkSession
       .builder
       .appName("Write-To-Kafka")
@@ -23,7 +25,7 @@ object WriteToKafka {
     val df = spark
       .readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
+      .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
       .option("subscribe", "str_stre")
       .load()
 
@@ -53,7 +55,7 @@ object WriteToKafka {
       .start()*/
 
     val topic = "str_stre"
-    val brokers = "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667"
+    val brokers = conf.getString("prod.kafa.brokers")
 
     val writer = new KafkaSink(topic, brokers)
 

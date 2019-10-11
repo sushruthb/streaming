@@ -1,5 +1,6 @@
 package com.struct.avro
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.avro.SchemaBuilder
@@ -9,13 +10,15 @@ import org.apache.spark.sql.functions.{get_json_object, json_tuple}
 object AvroSink {
     def main(args:Array[String]): Unit ={
       Logger.getLogger("org").setLevel(Level.ERROR)
+      val conf=ConfigFactory.load().getConfig(args(0))
+
       val spark= SparkSession
         .builder()
         .appName("SparkByExample.com")
         .getOrCreate()
 
       val topic = "avro_topic"
-      val servers = "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667"
+      val servers = conf.getString("prod.kafa.brokers")
 
 
 
