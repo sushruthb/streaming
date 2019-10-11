@@ -8,7 +8,7 @@ import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructFi
 object StructToKafka {
   def main(args:Array[String]){
   Logger.getLogger("org").setLevel(Level.ERROR)
-    val conf=ConfigFactory.load().getConfig(args(0))
+    val conf=ConfigFactory.load()
   val spark = SparkSession
     .builder
     .appName("Spark-Kafka-Integration")
