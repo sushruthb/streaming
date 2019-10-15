@@ -17,7 +17,8 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-hive" % "2.4.0",
   "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.0",
   "org.apache.spark" %% "spark-avro" % "2.4.0",
-  "com.typesafe" % "config" % "1.3.2"
+  "com.typesafe" % "config" % "1.3.2",
+  "org.apache.hive" % "hive-jdbc" % "3.1.1"
 
 )
 resolvers += "confluent" at "http://packages.confluent.io/maven/"
