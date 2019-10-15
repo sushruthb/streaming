@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.geronimo.specs:geronimo-jcache_1.0_spec:1.0-alpha-1:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.geronimo.specs/geronimo-jcache_1.0_spec/bundles/geronimo-jcache_1.0_spec-1.0-alpha-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.geronimo.specs/geronimo-jcache_1.0_spec/srcs/geronimo-jcache_1.0_spec-1.0-alpha-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
