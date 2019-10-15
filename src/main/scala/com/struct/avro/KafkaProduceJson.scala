@@ -1,6 +1,6 @@
 package com.struct.avro
+
 import com.typesafe.config.ConfigFactory
-import org.apache.commons.configuration.ConfigurationFactory
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
