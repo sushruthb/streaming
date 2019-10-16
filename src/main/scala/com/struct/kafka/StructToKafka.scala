@@ -36,8 +36,8 @@ import spark.implicits._
     .format("kafka")
     .option("topic", "str_stre")
     .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
-    .outputMode("update")
-    //.option("checkpointLocation", "/home/hdfs/checkpoint")
+    .outputMode("complete")
+    .option("checkpointLocation", "/home/hdfs/checkpoint")
     .start()
 
     query.awaitTermination()
