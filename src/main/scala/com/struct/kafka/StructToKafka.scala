@@ -36,7 +36,7 @@ import spark.implicits._
     .format("kafka")
     .option("topic", "str_stre")
     .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
-    .outputMode("append")
+    .outputMode("complete")
     .option("checkpointLocation", "/home/hdfs/checkpoint1")
     .start()
 
