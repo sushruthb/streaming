@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="841a905e-ec46-4045-8333-de1fe5f1dc8c" name="Default Changelist" comment="added new files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/StructToKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/StructToKafka.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
