@@ -5,7 +5,9 @@ object SparkHive {
   def main(args:Array[String]) {
     import java.io.File
     import org.apache.spark.sql.{Row, SaveMode, SparkSession}
+    import org.apache.log4j._
 
+    Logger.getLogger("org").setLevel(Level.ERROR)
     case class Record(key: Int, value: String)
 
     // warehouseLocation points to the default location for managed databases and tables
