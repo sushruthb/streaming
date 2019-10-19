@@ -23,7 +23,7 @@ object SparkHive {
     import spark.implicits._
     import spark.sql
 
-    sql( "show databases;" )
+    sql( "show databases" )
     /*sql("LOAD DATA LOCAL INPATH 'examples/src/main/resources/kv1.txt' INTO TABLE src")
 
 // Queries are expressed in HiveQL
