@@ -2,26 +2,27 @@ package com.struct.hive
 
 object SparkHive {
 
-import java.io.File
-import org.apache.spark.sql.{Row, SaveMode, SparkSession}
+  def main(args:Array[String]) {
+    import java.io.File
+    import org.apache.spark.sql.{Row, SaveMode, SparkSession}
 
-case class Record(key: Int, value: String)
+    case class Record(key: Int, value: String)
 
-// warehouseLocation points to the default location for managed databases and tables
-val warehouseLocation = new File("/warehouse").getAbsolutePath
+    // warehouseLocation points to the default location for managed databases and tables
+    val warehouseLocation = new File( "/warehouse" ).getAbsolutePath
 
-  val spark = SparkSession
-.builder()
-.appName("Spark Hive Example")
-.config("spark.sql.warehouse.dir", warehouseLocation)
-.enableHiveSupport()
-.getOrCreate()
+    val spark = SparkSession
+      .builder()
+      .appName( "Spark Hive Example" )
+      .config( "spark.sql.warehouse.dir", warehouseLocation )
+      .enableHiveSupport()
+      .getOrCreate()
 
-import spark.implicits._
-import spark.sql
+    import spark.implicits._
+    import spark.sql
 
-sql("show databases;")
-/*sql("LOAD DATA LOCAL INPATH 'examples/src/main/resources/kv1.txt' INTO TABLE src")
+    sql( "show databases;" )
+    /*sql("LOAD DATA LOCAL INPATH 'examples/src/main/resources/kv1.txt' INTO TABLE src")
 
 // Queries are expressed in HiveQL
 sql("SELECT * FROM src").show()
@@ -117,6 +118,6 @@ sql("SELECT * FROM hive_part_tbl").show()
 // |val_311|311|
 // ...*/
 
-spark.stop()
-
+    spark.stop()
+  }
 }
