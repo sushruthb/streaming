@@ -14,7 +14,6 @@ object StructToKafka {
     .appName("Spark-Kafka-Integration")
     .getOrCreate()
 
-
 import spark.implicits._
       //Define the Schema
 
@@ -25,7 +24,6 @@ import spark.implicits._
     StructField("country", StringType),
     StructField("year", IntegerType)
   ))
-
   //Create the Streaming DataFrame
   val streamingDataFrame = spark.readStream.schema(mySchema).csv("/user/hdfs/")
 
@@ -41,7 +39,6 @@ import spark.implicits._
     .start()
 
     query.awaitTermination()
-
     spark.stop
 
   }
