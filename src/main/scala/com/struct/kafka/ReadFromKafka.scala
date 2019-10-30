@@ -23,7 +23,7 @@ object ReadFromKafka {
       .readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
-      .option("subscribe", "str_stre")
+      .option("subscribe", "str_str")
       .option("startingOffsets","earliest")
       .load()
 

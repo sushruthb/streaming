@@ -32,7 +32,7 @@ import spark.implicits._
   val query=streamingDataFrame.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value").
     writeStream
     .format("kafka")
-    .option("topic", "str_stre")
+    .option("topic", "str_str")
     .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
     .outputMode("append")
     .option("checkpointLocation", "/home/hdfs/checkpoint1")
