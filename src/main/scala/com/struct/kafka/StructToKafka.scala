@@ -30,17 +30,17 @@ import spark.implicits._
     streamingDataFrame.printSchema()
     //Publish the Stream to Kafka
 
-  val query=streamingDataFrame.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value").
-    writeStream
+  val query=streamingDataFrame.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value")
+    .writeStream
     .format("kafka")
-    .option("topic", "str_str")
-    .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
     .outputMode("append")
-    .option("checkpointLocation", "/home/hdfs/checkpoint1")
+    .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
+    .option("topic", "str_str")
+    .option("checkpointLocation", "/home/hdfs/checkpoint")
     .start()
+    .awaitTermination()
 
-    query.awaitTermination()
-    spark.stop
+   // spark.stop
 
   }
 
