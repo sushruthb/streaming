@@ -27,6 +27,7 @@ import spark.implicits._
   //Create the Streaming DataFrame
   val streamingDataFrame = spark.readStream.schema(mySchema).csv("/user/hdfs/")
 
+    streamingDataFrame.printSchema()
     //Publish the Stream to Kafka
 
   val query=streamingDataFrame.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value").
