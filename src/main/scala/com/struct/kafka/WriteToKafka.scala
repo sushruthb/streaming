@@ -26,7 +26,7 @@ object WriteToKafka {
       .readStream
       .format("kafka")
       .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
-      .option("subscribe", "str_stre")
+      .option("subscribe", "str_str")
       .load()
 
 
@@ -46,23 +46,12 @@ object WriteToKafka {
 
     //Write Dataframe to Kafka
 
-   /* df1.writeStream
+    df1.writeStream
       .format("kafka")
-      .option("topic", "Struct_Streaming")
-      .outputMode("update")
-      .option("kafka.bootstrap.servers", "10.76.106.229:6667,10.76.107.133:6667,10.76.117.167:6667")
-      .option("checkpointLocation", "/home/hdfs/checkpoint")
-      .start()*/
-
-    val topic = "str_stre"
-    val brokers = conf.getString("prod.kafa.brokers")
-
-    val writer = new KafkaSink(topic, brokers)
-
-    val query = df1
-      .writeStream
-      .foreach(writer)
-      .outputMode("update")
+      .option("topic", "str_stre")
+      .outputMode("append")
+      .option("kafka.bootstrap.servers",conf.getString("prod.kafa.brokers"))
+      .option("checkpointLocation", "/home/hdfs/checkpoint5")
       .start()
       .awaitTermination()
 
