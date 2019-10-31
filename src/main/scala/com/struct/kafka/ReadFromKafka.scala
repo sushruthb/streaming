@@ -25,6 +25,7 @@ object ReadFromKafka {
       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
       .option("subscribe", "str_str")
       .option("startingOffsets","earliest")
+      .option("failOnDataLoss", "true")
       .load()
 
 
@@ -36,7 +37,7 @@ object ReadFromKafka {
       StructField("country", StringType),
       StructField("year", IntegerType)
     ))
-
+  df.printSchema()
     import org.apache.spark.sql.functions.from_json
 
     val df1 = df.selectExpr("CAST(value AS STRING)", "CAST(timestamp AS TIMESTAMP)").as[(String, Timestamp)]
@@ -46,6 +47,7 @@ object ReadFromKafka {
     //Print the DataFrame on Console
     df1.writeStream
       .format("console")
+      .outputMode("append")
       .option("truncate","false")
       .start()
       .awaitTermination()
