@@ -41,7 +41,7 @@ object WriteToKafka {
 
     import org.apache.spark.sql.functions.from_json
 
-    val df1 = df.selectExpr("CAST(key AS STRING) AS key", "to_json(struct(*)) AS value").as[(String, String)]
+    val df1 = df.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value").as[(String, String)]
 
 
     //Write Dataframe to Kafka
