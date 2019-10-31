@@ -34,9 +34,9 @@ import spark.implicits._
     .writeStream
     .format("kafka")
     .outputMode("append")
-    .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
+    .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
     .option("topic", "str_str")
-    .option("checkpointLocation", "/home/hdfs/checkpoint")
+    .option("checkpointLocation", "/home/hdfs/checkpoint4")
     .start()
     .awaitTermination()
 
