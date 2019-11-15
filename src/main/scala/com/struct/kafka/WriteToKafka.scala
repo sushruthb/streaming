@@ -8,9 +8,6 @@ import com.struct.kafka._
 import com.typesafe.config.ConfigFactory
 
 object WriteToKafka {
-
-
-
   def main(args:Array[String]): Unit ={
     Logger.getLogger("org").setLevel(Level.ERROR)
     val conf=ConfigFactory.load()
@@ -41,7 +38,7 @@ object WriteToKafka {
 
     import org.apache.spark.sql.functions.from_json
 
-    val df1 = df.selectExpr("CAST(HSCode AS STRING) AS key", "to_json(struct(*)) AS value").as[(String, String)]
+    val df1 = df.selectExpr("CAST(value AS STRING) AS key", "to_json(struct(*)) AS value").as[(String, String)]
 
 
     //Write Dataframe to Kafka
