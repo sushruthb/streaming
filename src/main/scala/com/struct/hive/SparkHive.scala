@@ -11,7 +11,7 @@ object SparkHive {
     case class Record(key: Int, value: String)
 
     // warehouseLocation points to the default location for managed databases and tables
-    val warehouseLocation = new File( "/warehouse" ).getAbsolutePath
+    val warehouseLocation = new File( "/apps/spark/warehouse" ).getAbsolutePath
 
     val spark = SparkSession
       .builder()
