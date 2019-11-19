@@ -45,6 +45,7 @@ object SampleStream {
       .format("kafka")
       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
       .option("topic", "topic2")
+      .option("checkpointLocation","/home/dev/checkpoint")
       .start()
   }
 }
