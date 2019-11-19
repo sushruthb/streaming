@@ -22,7 +22,7 @@ public class HiveJdbcExample {
             System.exit(1);
         }
 
-        Connection conn = DriverManager.getConnection("jdbc:hive2://localhost:10000/default", "hive", "Hive1@dba");
+        Connection conn = DriverManager.getConnection("jdbc:hive2://10.76.98.0:10000/default", "hive", "Hive1@dba");
         Statement stmt = conn.createStatement();
         // show tables
         String sql = "SHOW databases";
