@@ -33,7 +33,7 @@ public class HiveJdbcExample {
         }
         rs.close();
 
-        String sql2 = "select * from testdb.test_table";
+        String sql2 = "select * from spark.employee";
         System.out.println("Running: " + sql2);
         ResultSet rs2 = stmt.executeQuery(sql2);
 
