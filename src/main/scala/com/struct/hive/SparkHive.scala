@@ -8,7 +8,7 @@ object SparkHive {
     import org.apache.log4j._
 
     Logger.getLogger("org").setLevel(Level.ERROR)
-    case class Record(key: Int, value: String)
+    case class Record(eid:Int, name:String,salary:String, destination:String)
 
     // warehouseLocation points to the default location for managed databases and tables
     val warehouseLocation = new File( "/apps/spark/warehouse" ).getAbsolutePath
