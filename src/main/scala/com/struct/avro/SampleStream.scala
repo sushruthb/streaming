@@ -3,7 +3,7 @@ package com.struct.avro
 import com.typesafe.config.ConfigFactory
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
-
+import java.util.UUID
 
 object SampleStream {
 
@@ -49,7 +49,7 @@ object SampleStream {
       .format("kafka")
       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
       .option("topic", "topic2")
-      .option("checkpointLocation","/home/dev/checkpoint")
+      .option("checkpointLocation","/home/dev/checkpoint"+ UUID.randomUUID.toString)
       .start()
       .awaitTermination()
 

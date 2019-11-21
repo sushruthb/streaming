@@ -25,9 +25,9 @@ object KafkaConsumer {
     import spark.implicits._
 
     df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
-      .as[(String, String)]
+      .as[(String, String)].show(2)
 
-    df.show()
+
 
     spark.close()
 

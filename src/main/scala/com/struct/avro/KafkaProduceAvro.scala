@@ -1,5 +1,7 @@
 package com.struct.avro
 
+import java.util.UUID
+
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.avro.to_avro
 import org.apache.spark.sql.functions.{col, from_json, struct}
@@ -75,7 +77,7 @@ object KafkaProduceAvro {
       .outputMode("append")
       .option("kafka.bootstrap.servers", brokers)
       .option("topic", "avro_topic")
-      .option("checkpointLocation","/home/hdfs/checkpoint")
+      .option("checkpointLocation","/home/hdfs/checkpoint"+ UUID.randomUUID.toString)
       .start()
       .awaitTermination()
   }
