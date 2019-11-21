@@ -3,8 +3,7 @@ package com.struct.avro
 import com.typesafe.config.ConfigFactory
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
-import org.apache.parquet.Files
-import org.apache.twill.internal.utils.Paths
+
 
 object SampleStream {
 
@@ -52,5 +51,8 @@ object SampleStream {
       .option("topic", "topic2")
       .option("checkpointLocation","/home/dev/checkpoint")
       .start()
+      .awaitTermination()
+
+    spark.close()
   }
 }
