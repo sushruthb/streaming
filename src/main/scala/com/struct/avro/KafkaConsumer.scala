@@ -22,6 +22,8 @@ object KafkaConsumer {
       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
       .option("subscribe", conf.getString("topic"))
       .load()
+    import spark.implicits._
+
     df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
       .as[(String, String)]
 
