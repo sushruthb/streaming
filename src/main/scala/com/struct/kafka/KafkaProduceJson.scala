@@ -36,7 +36,7 @@ object KafkaProduceJson {
       .writeStream
       .format("kafka")
       .option("kafka.bootstrap.servers", servers)
-      .option("topic", "text_topic")
+      .option("topic", "text-topic")
       .start()
 
   }

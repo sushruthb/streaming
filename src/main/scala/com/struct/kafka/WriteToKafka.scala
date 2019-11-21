@@ -25,7 +25,7 @@ object WriteToKafka {
       .readStream
       .format("kafka")
       .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
-      .option("subscribe", "str_str")
+      .option("subscribe", "str-str")
       .load()
 
 
@@ -47,7 +47,7 @@ object WriteToKafka {
 
     df1.writeStream
       .format("kafka")
-      .option("topic", "str_stre")
+      .option("topic", "str-stre")
       .outputMode("append")
       .option("kafka.bootstrap.servers",conf.getString("prod.kafa.brokers"))
       .option("checkpointLocation", "/home/hdfs/checkpoint"+ UUID.randomUUID.toString)
