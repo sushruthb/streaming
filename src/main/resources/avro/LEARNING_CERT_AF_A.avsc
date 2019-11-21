@@ -1,0 +1,126 @@
+{
+  "type" : "record",
+  "name" : "LEARNING_CERT_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "CERT_ATTID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CERT_ATTID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CERT_EXP_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CERT_EXP_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CERT_ISSUE_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CERT_ISSUE_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CERT_NAME",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CERT_NAME_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "LAST_MODIFIED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "READONLY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "READONLY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

@@ -1,0 +1,158 @@
+{
+  "type" : "record",
+  "name" : "USERS_GROUP_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_ACTIVE_MEM_COUNT",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_ACTIVE_MEM_COUNT_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_FLAG",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_FLAG_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_LAST_MOD",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_LAST_MOD_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_LAST_REFRESHED",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_LAST_REFRESHED_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_LEADER",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_LEADER_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_MEMBER_COUNT",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_MEMBER_COUNT_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_NAME",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_NAME_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_RULE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_RULE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_STATIC",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_STATIC_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_SUBTYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_SUBTYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_SUB_DOMAIN",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_SUB_DOMAIN_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_UI_STATE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_UI_STATE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_USER_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

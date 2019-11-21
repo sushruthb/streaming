@@ -25,6 +25,7 @@ object SampleStream {
     // `from_avro` requires Avro schema in JSON string format.
     val jsonFormatSchema = new String(Files.readAllBytes(Paths.get("./src/main/resources/user.avsc")))
 
+
     var df = spark.readStream
         .format( "kafka" )
         .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
@@ -34,6 +35,10 @@ object SampleStream {
     df.printSchema()
 
     import spark.implicits._
+
+    // 1. Decode the Avro data into a struct;
+    // 2. Filter by column `favorite_color`;
+    // 3. Encode the column `name` in Avro format.
 
     val output = df
       .select(from_avro('value, jsonFormatSchema) as 'user)

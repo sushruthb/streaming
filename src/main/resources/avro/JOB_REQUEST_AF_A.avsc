@@ -1,0 +1,254 @@
+{
+  "type" : "record",
+  "name" : "JOB_REQUEST_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "CANCELLED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CANCELLED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CANCELLED_BY_TYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "CANCELLED_BY_TYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "CANCELLED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CANCELLED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY_TYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY_TYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "CREATION_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CREATION_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CREATOR_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATOR_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATOR_ID_TYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "CREATOR_ID_TYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "DEPENDENT_RUN_AFTER_MINUTES",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "DEPENDENT_RUN_AFTER_MINUTES_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "DEPENDENT_RUN_AT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "DEPENDENT_RUN_AT_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "DEPENDENT_START_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "DEPENDENT_START_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "EFFECTIVE_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "EFFECTIVE_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "END_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "END_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "JOB_NAME",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "JOB_NAME_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "JOB_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "JOB_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY_TYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY_TYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OWNER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OWNER_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OWNER_ID_TYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "OWNER_ID_TYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "PARENT_REQUEST_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PARENT_REQUEST_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PRIORITY_IN_JOB_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PRIORITY_IN_JOB_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "REQUEST_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "REQUEST_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "REQUEST_SPEC",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "REQUEST_SPEC_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SCHEDULING_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SCHEDULING_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "STATUS",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "STATUS_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TIME_EXPRESSION",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TIME_EXPRESSION_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

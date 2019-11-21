@@ -1,0 +1,90 @@
+{
+  "type" : "record",
+  "name" : "OBJ_COMMENT_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "COMMENTATOR",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMMENTATOR_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "MODULE_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJ_CMT_CONTENT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJ_CMT_CONTENT_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJ_CMT_LASTMODIFIED",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJ_CMT_LASTMODIFIED_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJ_COMMENT_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJ_COMMENT_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

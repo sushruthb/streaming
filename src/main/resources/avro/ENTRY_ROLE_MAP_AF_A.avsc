@@ -1,0 +1,110 @@
+{
+  "type" : "record",
+  "name" : "ENTRY_ROLE_MAP_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "DISP_ORDER",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "DISP_ORDER_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "ENTRY_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ENTRY_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ENTRY_TYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "ENTRY_TYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "FORM_DATA_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ROLE_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ROLE_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

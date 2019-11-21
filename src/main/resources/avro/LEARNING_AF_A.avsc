@@ -1,0 +1,462 @@
+{
+  "type" : "record",
+  "name" : "LEARNING_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "BEGIN_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "BEGIN_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMPLETED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMPLETED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMPLETED_BY_PROXY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMPLETED_BY_PROXY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMPLETED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMPLETED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_BY_PROXY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_BY_PROXY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_STATUS",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CONFIRMED_STATUS_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COST",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "COST_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CURRENCY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CURRENCY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMDATE1",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMDATE1_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMDATE2",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMDATE2_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM1",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM1_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM2",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM2_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM3",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM3_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM4",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMNUM4_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT1",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT10",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT10_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT11",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT11_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT12",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT12_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT13",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT13_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT14",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT14_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT1_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT2",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT2_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT3",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT3_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT4",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT4_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT5",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT5_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT6",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT6_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT7",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT7_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT8",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT8_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT9",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CUSTOMTEXT9_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "DUE_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "DUE_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "END_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "END_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FLAG",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FLAG_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "IS_ACTIVE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "IS_ACTIVE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_BLOB_VALUE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_BLOB_VALUE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_COMMON_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_COMMON_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_NAME",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LEARNING_NAME_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PLANNED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PLANNED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PLANNED_BY_PROXY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PLANNED_BY_PROXY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PLANNED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PLANNED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PURPOSE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PURPOSE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SCORE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SCORE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "START_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "START_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "STATUS",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "STATUS_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TEMPLATE_GUID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "TEMPLATE_GUID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

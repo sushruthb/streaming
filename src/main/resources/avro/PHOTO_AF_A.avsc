@@ -1,0 +1,142 @@
+{
+  "type" : "record",
+  "name" : "PHOTO_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "HEIGHT",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "HEIGHT_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "IS_DEFAULT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "IS_DEFAULT_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LASTMODIFIED",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LASTMODIFIED_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "MIMETYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "MIMETYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PHOTO",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PHOTOTYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "PHOTOTYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "PHOTO_NAME",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PHOTO_NAME_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PHOTO_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SHA256",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SHA256_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "STATUS",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "STATUS_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "WIDTH",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "WIDTH_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  } ]
+}

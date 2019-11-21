@@ -1,0 +1,54 @@
+{
+  "type" : "record",
+  "name" : "RBP_RULE_TG_MAP_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "RULE_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "RULE_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "USERS_GROUP_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  } ]
+}

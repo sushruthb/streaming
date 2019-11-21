@@ -1,0 +1,206 @@
+{
+  "type" : "record",
+  "name" : "CAL_SESSION_SUBJECT_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "AUTHORIZED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "AUTHORIZED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CALIBRATED_FLAG",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CALIBRATED_FLAG_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMMENTS",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMMENTS_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMP_ENTRY_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMP_ENTRY_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMP_FOLDER_MAP_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMP_FOLDER_MAP_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMP_FORM_DATA_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMP_FORM_DATA_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "COMP_FORM_OWNER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMP_FORM_OWNER_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "CREATION_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "CREATION_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "EXTERNAL_COMMENTS",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "EXTERNAL_COMMENTS_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "LAST_MODIFIED_BY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_BY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_MODIFIED_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PM_FOLDER_MAP_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PM_FOLDER_MAP_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PM_FORM_DATA_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PM_FORM_DATA_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PM_FORM_OWNER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "PM_FORM_OWNER_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "REASON_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "REASON_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "SESSION_ENTRY_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "SESSION_ENTRY_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "SESSION_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "SESSION_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "STATUS",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "STATUS_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

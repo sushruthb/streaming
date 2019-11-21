@@ -1,0 +1,62 @@
+{
+  "type" : "record",
+  "name" : "RBP_ROLE_PERM_MAP_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "DATA_BLOCKING_PERIOD",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "DATA_BLOCKING_PERIOD_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "PERMISSION_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "PERMISSION_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ROLE_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ROLE_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

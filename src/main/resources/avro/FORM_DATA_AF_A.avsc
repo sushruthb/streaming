@@ -1,0 +1,222 @@
+{
+  "type" : "record",
+  "name" : "FORM_DATA_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "DECOUPLE_VERSION",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "DECOUPLE_VERSION_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "FORM_BATCH_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_BATCH_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_ACHIVEDATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_ACHIVEDATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_DUEDATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_DUEDATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_LASTMODIFIED",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_LASTMODIFIED_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_ORIGINATOR",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_ORIGINATOR_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_OWNER",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_OWNER_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_REVIEWEND",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_REVIEWEND_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_REVIEWSTART",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_REVIEWSTART_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_STATUS",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_STATUS_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_SUBJECT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_SUBJECT_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_TITLE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_TITLE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_VERSION",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_DATA_VERSION_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_RATED",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_RATED_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_RATING",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "FORM_RATING_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "FORM_SCALE",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "FORM_SCALE_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "FORM_TEMPLATE_HISTORY_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_TEMPLATE_HISTORY_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_TEMPLATE_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_TEMPLATE_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "FORM_TEMPLATE_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FORM_TEMPLATE_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "LAST_AUDITTRAIL_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_AUDITTRAIL_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "ROUTE_MAP",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "ROUTE_MAP_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

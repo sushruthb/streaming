@@ -1,0 +1,354 @@
+{
+  "type" : "record",
+  "name" : "OBJECTIVE_AF_A",
+  "fields" : [ {
+    "name" : "PARTITION_DT",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_ID",
+    "type" : "string"
+  }, {
+    "name" : "COMPANY_UUID",
+    "type" : "string"
+  }, {
+    "name" : "COMPETENCY_GUID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "COMPETENCY_GUID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_CONTEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "FMKAUDIT_ID",
+    "type" : "long"
+  }, {
+    "name" : "LAST_STATUS_ITEM_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_STATUS_ITEM_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_UPDATE_REQUEST_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "LAST_UPDATE_REQUEST_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "MODULE_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ACHIEVEMENT",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ACHIEVEMENT_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ACHIEVEMENT_TEXT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ACHIEVEMENT_TEXT_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ACTUAL",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ACTUAL_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_CATEGORY",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_CATEGORY_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_CURRENT_OWNER",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_CURRENT_OWNER_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DEFGRP",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DEFGRP_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DEPT",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DEPT_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DESC",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DESCRIPTION",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DESCRIPTION_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DESC_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DIV",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DIV_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DUE_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_DUE_DATE_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_FLAG",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_FLAG_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_GUID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_GUID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_LASTMODIFIED",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_LASTMODIFIED_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_LOC",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_LOC_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_MASTER_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_MASTER_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_METRIC",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_METRIC_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_MLT_ACHIEVEMENT_TYPE",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_MLT_HIEVEMENT_TYPE_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_MODIFIER",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_MODIFIER_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_NAME",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_NAME_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_NUMBERING",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_NUMBERING_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PARENT_ID",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PARENT_ID_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PERCENT",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PERCENT_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PERIOD_END",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PERIOD_END_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PERIOD_START",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_PERIOD_START_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_POS",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_POS_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_RATING",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_RATING_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_STATE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_STATE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_STATUS",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_STATUS_O",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_STRATEGIC",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_STRATEGIC_O",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_TARGET",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_TARGET_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_TYPE_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_WEIGHT",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "OBJECTIVE_WEIGHT_O",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "SUBJECT_USER_TYPE",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_ID",
+    "type" : "string"
+  }, {
+    "name" : "TXN_OP",
+    "type" : "string"
+  }, {
+    "name" : "TXN_PROXY_USER_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "TXN_TIME",
+    "type" : "long"
+  }, {
+    "name" : "TXN_USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "USERS_SYS_ID_O",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}
