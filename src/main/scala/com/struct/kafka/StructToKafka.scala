@@ -1,5 +1,7 @@
 package com.struct.kafka
 
+import java.util.UUID
+
 import com.typesafe.config.ConfigFactory
 import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
@@ -36,7 +38,7 @@ import spark.implicits._
     .outputMode("append")
     .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
     .option("topic", "str_str")
-    .option("checkpointLocation", "/home/hdfs/checkpoint4")
+    .option("checkpointLocation", "/home/hdfs/checkpoint"+UUID.randomUUID.toString)
     .start()
     .awaitTermination()
 
