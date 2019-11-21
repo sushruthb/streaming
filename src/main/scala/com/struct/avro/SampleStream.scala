@@ -24,7 +24,6 @@ object SampleStream {
     // `from_avro` requires Avro schema in JSON string format.
     val jsonFormatSchema = new String(Files.readAllBytes(Paths.get("../src/main/resources/user.avsc")))
 
-
     var df = spark.readStream
         .format( "kafka" )
         .option( "kafka.bootstrap.servers", conf.getString("prod.kafa.brokers") )
