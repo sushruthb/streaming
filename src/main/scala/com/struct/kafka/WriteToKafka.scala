@@ -1,5 +1,7 @@
 package com.struct.kafka
 
+import java.util.UUID
+
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
@@ -48,7 +50,7 @@ object WriteToKafka {
       .option("topic", "str_stre")
       .outputMode("append")
       .option("kafka.bootstrap.servers",conf.getString("prod.kafa.brokers"))
-      .option("checkpointLocation", "/home/hdfs/checkpoint5")
+      .option("checkpointLocation", "/home/hdfs/checkpoint"+ UUID.randomUUID.toString)
       .start()
       .awaitTermination()
 
