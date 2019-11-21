@@ -9,7 +9,7 @@ scalaVersion := "2.11.12"
 libraryDependencies ++= Seq(
 
   "org.apache.spark" %% "spark-core" % "2.4.4" % "provided",
-  "org.apache.kafka" % "kafka-clients" % "2.1.1",
+  "org.apache.kafka" % "kafka-clients" % "2.3.0",
   "org.apache.kafka" %% "kafka" % "2.3.0",
   "org.apache.spark" %% "spark-streaming" % "2.4.4",
   "org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.4",
