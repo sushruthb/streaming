@@ -5,15 +5,9 @@ import org.apache.spark.sql.SparkSession
 
 object WordCount {
   def main(args: Array[String]): Unit = {
-    if (args.length < 3) {
-      System.err.println("Usage: StructuredKafkaWordCount <bootstrap-servers> " +
-        "<subscribe-type> <topics>")
-      System.exit(1)
-    }
 
-    val Array(bootstrapServers, subscribeType, topics) = args
 
-    val spark = SparkSession
+       val spark = SparkSession
       .builder
       .appName("StructuredKafkaWordCount")
       .getOrCreate()
@@ -25,7 +19,7 @@ object WordCount {
       .readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
-      .option(subscribeType, conf.getString("topic"))
+      .option("subscribe", conf.getString("topic"))
       .load()
       .selectExpr("CAST(value AS STRING)")
       .as[String]
