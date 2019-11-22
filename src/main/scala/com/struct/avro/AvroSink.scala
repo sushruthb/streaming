@@ -15,7 +15,7 @@ object AvroSink {
       Logger.getLogger("org").setLevel(Level.ERROR)
       val conf = ConfigFactory.load()
 
-      val schema = new Schema.Parser().parse(new File("src/main/resources/user.avsc"))
+      val schema = new Schema.Parser().parse(new File("file:///home/dev/streaming/src/main/resources/user.avsc"))
       val spark=SparkSession
         .builder
         .appName("AvroFormat")
@@ -30,7 +30,7 @@ object AvroSink {
 
 
       val usersDF = spark.read.format("avro").load("src/main/resources/users.avro")
-      usersDF.select("name", "favorite_color").write.format("avro").save("src/main/resources/namesAndFavColors.avro")
+      usersDF.select("name", "favorite_color").write.format("avro").save("file:///home/dev/streaming/src/main/resources/namesAndFavColors.avro")
 
     }
 
