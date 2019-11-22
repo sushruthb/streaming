@@ -15,7 +15,7 @@ object AvroSink {
       Logger.getLogger("org").setLevel(Level.ERROR)
       val conf = ConfigFactory.load()
 
-      val schema = new Schema.Parser().parse(new File("user.avsc"))
+      val schema = new Schema.Parser().parse(new File("src/main/resources/user.avsc"))
       val spark=SparkSession
         .builder
         .appName("AvroFormat")
