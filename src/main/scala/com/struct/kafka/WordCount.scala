@@ -20,7 +20,7 @@ object WordCount {
       .readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
-      .option("subscribe", conf.getString("topic"))
+      .option("subscribe", conf.getString("topic1"))
       .load()
       .selectExpr("CAST(value AS STRING)")
       .as[String]
