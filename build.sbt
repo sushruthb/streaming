@@ -10,14 +10,14 @@ libraryDependencies ++= Seq(
 
   "org.apache.spark" %% "spark-core" % "2.4.4" % "provided",
   "org.apache.kafka" % "kafka-clients" % "2.0.0",
-  "org.apache.kafka" %% "kafka" % "2.3.0",
+  "org.apache.kafka" %% "kafka" % "2.0.0",
   "org.apache.spark" %% "spark-streaming" % "2.4.4",
   "org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.4",
   "org.apache.spark" %% "spark-sql" % "2.4.4",
   "org.apache.spark" %% "spark-hive" % "2.4.4",
   "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.4",
   "org.apache.spark" %% "spark-avro" % "2.4.4",
-  "com.typesafe" % "config" % "1.3.2",
+  "com.typesafe" % "config" % "1.3.2" % "provided",
   "org.apache.hive" % "hive-jdbc" % "3.1.1",
   "org.apache.logging.log4j" % "log4j-api" % "2.12.0"
 
