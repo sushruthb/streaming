@@ -1,10 +1,12 @@
 package com.struct.avro
+import java.io.File
+
 import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
-
 import org.apache.spark.sql.avro._
-import java.nio.file.Files;
+import org.apache.avro.Schema
+import java.nio.file.Files
 import java.nio.file.Paths;
 object KafkaConsumeAvro {
 
@@ -19,7 +21,7 @@ object KafkaConsumeAvro {
 
       // `from_avro` requires Avro schema in JSON string format.
     val jsonFormatSchema = new String(Files.readAllBytes(Paths.get("./src/main/resources/avro/ATTACH_CONTENT_AF_A.avsc")))
-
+    val schema = new Schema.Parser().parse(new File("user.avsc"))
     val df = spark
       .readStream
       .format("kafka")
