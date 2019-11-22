@@ -21,13 +21,16 @@ object AvroSink {
         .appName("AvroFormat")
         .getOrCreate()
 
-      val df=spark
-        .read
-        .format("avro")
-        .option("avroSchema", schema.toString)
-        .load("src/main/resources/users.avro")
-        .show()
+    //  val df=spark
+        //.read
+        //.format("avro")
+        //.option("avroSchema", schema.toString)
+       // .load("src/main/resources/users.avro")
+     //   .show()
 
+
+      val usersDF = spark.read.format("avro").load("src/main/resources/users.avro")
+      usersDF.select("name", "favorite_color").write.format("avro").save("src/main/resources/namesAndFavColors.avro")
 
     }
 
