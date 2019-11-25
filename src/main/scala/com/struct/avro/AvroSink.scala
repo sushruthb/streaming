@@ -22,7 +22,8 @@ object AvroSink {
         .getOrCreate()
 
 
-      val usersDF = spark.read.format("avro").load("/user/hdfs/users.avro")
+
+      val usersDF = spark.read.format("avro").option("avroSchema", schema.toString).load("/user/hdfs/users.avro")
       usersDF.select("name", "favorite_color").write.format("avro").save("/user/hdfs/namesAndFavColors.avro")
 
       import spark.implicits._
