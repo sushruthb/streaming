@@ -21,23 +21,12 @@ object AvroSink {
         .appName("AvroFormat")
         .getOrCreate()
 
-    //  val df=spark
-        //.read
-        //.format("avro")
-        //.option("avroSchema", schema.toString)
-       // .load("src/main/resources/users.avro")
-     //   .show()
 
-
-      val usersDF = spark.read.format("avro").load("file:////home/dev/streaming/src/main/resources/users.avro")
-      usersDF.select("name", "favorite_color").write.format("avro").save("file:////home/dev/streaming/src/main/resources/namesAndFavColors.avro")
+      val usersDF = spark.read.format("avro").load("/user/hdfs/users.avro")
+      usersDF.select("name", "favorite_color").write.format("avro").save("/user/hdfs/namesAndFavColors.avro")
 
       import spark.implicits._
 
-
-      // Convert structured data to binary from string (key column) and
-      // int (value column) and save them to a Kafka article.
-      //df.write.format("avro").save("/user/hdfs/users1.avro")
 
 
 
