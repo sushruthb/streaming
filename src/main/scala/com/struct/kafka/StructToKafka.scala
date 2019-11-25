@@ -47,4 +47,3 @@ import spark.implicits._
   }
 
 }
-i504
