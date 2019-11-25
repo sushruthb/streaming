@@ -17,7 +17,10 @@ object AvroKafkaSink {
       val schema = new Schema.Parser().parse(new File("/home/dev/streaming/src/main/resources/avro/ATTACH_CONTENT_AF_A.avsc"))
       val spark = SparkSession.builder.appName("AvroFormat").getOrCreate()
 
-     val df = spark.readStream.format("kafka").option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers")).option("subscribe", "topic").load()
+     val df = spark.readStream.format("kafka")
+       .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
+       .option("avroSchema", schema.toString)
+       .option("subscribe", "topic").load()
       //val df = spark.readStream.format("kafka").option("kafka.bootstrap.servers", "wdfl41000200d.emea.global.corp.sap:6667,wdfl41000341d.emea.global.corp.sap:6667,wdfl41000178d.emea.global.corp.sap:6667").option("subscribe", "topic").load()
      df.printSchema()
 
