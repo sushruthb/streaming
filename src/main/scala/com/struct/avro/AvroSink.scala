@@ -29,8 +29,35 @@ object AvroSink {
      //   .show()
 
 
-      val usersDF = spark.read.format("avro").load("src/main/resources/users.avro")
+      val usersDF = spark.read.format("avro").load("file:////home/dev/streaming/src/main/resources/users.avro")
       usersDF.select("name", "favorite_color").write.format("avro").save("file:///home/dev/streaming/src/main/resources/namesAndFavColors.avro")
+
+      import spark.implicits._
+      // When reading the key and value of a Kafka article, decode the
+      // binary (Avro) data into structured data.
+      // The schema of the resulting DataFrame is: <key: string, value: int>
+      val df = spark
+        .readStream
+        .format("kafka")
+        .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
+        .option("subscribe", "t")
+        .load()
+        .select(
+          from_avro($"key", SchemaBuilder.builder().stringType()).as("key"),
+          from_avro($"value", SchemaBuilder.builder().intType()).as("value"))
+
+      // Convert structured data to binary from string (key column) and
+      // int (value column) and save them to a Kafka article.
+      df
+        .select(
+          to_avro($"key").as("key"),
+          to_avro($"value").as("value"))
+        .writeStream
+        .format("kafka")
+        .option("kafka.bootstrap.servers", conf.getString("prod.kafa.brokers"))
+        .option("article", "t")
+        .save()
+
 
     }
 
