@@ -1,4 +1,4 @@
-package com.struct.avro
+ package com.struct.avro
 import java.io.File
 
 import com.typesafe.config.ConfigFactory
