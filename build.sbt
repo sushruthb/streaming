@@ -8,16 +8,16 @@ scalaVersion := "2.11.12"
 
 libraryDependencies ++= Seq(
 
-  "org.apache.spark" %% "spark-core" % "2.3.4" % "provided",
+ // "org.apache.spark" %% "spark-core" % "2.3.4" % "provided",
   "org.apache.spark" %% "spark-core" % "2.4.0" % "provided",
   "org.apache.kafka" % "kafka-clients" % "2.0.0",
   "org.apache.kafka" %% "kafka" % "2.0.0",
-  "org.apache.spark" %% "spark-streaming" % "2.3.4",
+  //"org.apache.spark" %% "spark-streaming" % "2.3.4",
   "org.apache.spark" %% "spark-streaming" % "2.4.0",
   "org.apache.spark" %% "spark-streaming-kafka-0-10" % "2.4.0",
   "org.apache.spark" %% "spark-sql" % "2.3.4",
   "org.apache.spark" %% "spark-hive" % "2.3.4",
-  "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.3.4",
+ // "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.3.4",
   "org.apache.spark" %% "spark-avro_2.11" % "2.4.0",
   "com.typesafe" % "config" % "1.3.2",
   "org.apache.hive" % "hive-jdbc" % "3.1.1",
