@@ -5,6 +5,17 @@
     <option name="customVMPath" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
     <option name="linkedExternalProjectsSettings">
       <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../avrostreaming" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../avrostreaming" />
+            <option value="$PROJECT_DIR$/../avrostreaming/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.3.4" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
