@@ -5,15 +5,16 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.streaming.OutputMode
 import org.apache.spark.sql.types.StringType
-import streaming.ConfigReader._
-import streaming.LoggerHelper
-import streaming.spark.CassandraForeachWriter.writeToCassandra
+import com.spark.streaming.ConfigReader._
+import com.spark.streaming.spark.CassandraForeachWriter.writeToCassandra
+import com.spark.streaming.LoggerHelper
 
 object StructuredStreamingWordCount extends App with LoggerHelper {
 
   info("connection to cassandra ")
   val cluster = Cluster.builder().addContactPoint("localhost").build()
   val session: Session = cluster.connect()
+
 
   info("creating a keyspace..")
   session.execute(s"create keyspace if not exists $Keyspace WITH replication = " +

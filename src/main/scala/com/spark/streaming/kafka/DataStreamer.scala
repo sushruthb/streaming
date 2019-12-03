@@ -2,13 +2,13 @@ package com.spark.streaming.kafka
 
 import java.util.Properties
 
+import akka.actor.ActorSystem
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
-
+import com.spark.streaming.ConfigReader._
 import scala.concurrent.ExecutionContextExecutor
 import scala.concurrent.duration._
 import scala.language.postfixOps
 import scala.util.Random
-import com.spark.streaming.LoggerHelper
 import com.spark.streaming.LoggerHelper
 
 object DataStreamer extends App with LoggerHelper {

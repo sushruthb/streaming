@@ -2,7 +2,7 @@ package com.spark.streaming.spark
 
 import com.datastax.driver.core.{Cluster, Session}
 import org.apache.spark.sql.{ForeachWriter, Row}
-import streaming.ConfigReader.Keyspace
+import com.spark.streaming.ConfigReader.Keyspace
 
 object CassandraForeachWriter {
 
