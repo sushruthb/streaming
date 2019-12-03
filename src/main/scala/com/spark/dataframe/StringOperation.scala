@@ -1,7 +1,7 @@
 package com.spark.dataframe
 
 import org.apache.spark.sql.functions._
-
+import com.spark.dataframe.Constants._
 object StringOperation extends App {
 
   df.show(5, false)

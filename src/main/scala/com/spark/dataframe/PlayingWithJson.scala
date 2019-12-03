@@ -2,7 +2,7 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions._
-
+import com.spark.dataframe.Constants._
 object PlayingWithJson extends App {
 
   //creating a json

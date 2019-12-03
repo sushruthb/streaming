@@ -2,7 +2,7 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.Column
 import org.apache.spark.sql.functions._
-
+import com.spark.dataframe.Constants._
 object NumberOperations extends App {
 
   /*

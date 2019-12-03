@@ -8,6 +8,8 @@ import scala.concurrent.ExecutionContextExecutor
 import scala.concurrent.duration._
 import scala.language.postfixOps
 import scala.util.Random
+import com.spark.streaming.LoggerHelper
+import com.spark.streaming.LoggerHelper
 
 object DataStreamer extends App with LoggerHelper {
 

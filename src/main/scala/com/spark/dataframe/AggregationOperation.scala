@@ -3,7 +3,7 @@ package com.spark.dataframe
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{Column, DataFrame}
-
+import com.spark.dataframe.Constants._
 object AggregationOperation extends App {
 
   //let's minimize the partition

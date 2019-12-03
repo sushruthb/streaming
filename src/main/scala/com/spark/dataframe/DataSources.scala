@@ -1,7 +1,7 @@
 package com.spark.dataframe
 
 object DataSources extends App {
-
+  import com.spark.dataframe.Constants._
   //reading a csv file
   val csvDf = spark
     .read

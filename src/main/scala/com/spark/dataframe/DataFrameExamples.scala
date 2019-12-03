@@ -2,7 +2,7 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
-
+import com.spark.dataframe.Constants._
 object DataFrameExamples extends App {
 
   //create sparksession
