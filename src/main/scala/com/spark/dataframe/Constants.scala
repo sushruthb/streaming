@@ -4,7 +4,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object Constants {
 
-  val spark: SparkSession = SparkSession.builder().master("local").appName("dataframe-operations").getOrCreate()
+  val spark: SparkSession = SparkSession.builder().appName("dataframe-operations").getOrCreate()
 
   val df: DataFrame = spark
     .read
