@@ -1,10 +1,11 @@
 package com.spark.rdd
 
+import com.spark.streaming.LoggerHelper
 import org.apache.spark.sql.SparkSession
 
 import scala.util.Random
 
-object RddExamples extends App {
+object RddExamples extends App with LoggerHelper{
 
   val spark = SparkSession.builder().appName("rdd-example").master("local[*]").getOrCreate()
 

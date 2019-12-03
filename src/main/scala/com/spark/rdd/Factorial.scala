@@ -1,8 +1,9 @@
 package com.spark.rdd
 
+import com.spark.streaming.LoggerHelper
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Factorial extends App {
+object Factorial extends App with LoggerHelper{
  val num:BigInt = 200000
   println("Boosting Factorial Calculation")
 

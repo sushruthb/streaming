@@ -2,7 +2,8 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.functions._
 import com.spark.dataframe.Constants._
-object DateTimeOperations extends App {
+import com.spark.streaming.LoggerHelper
+object DateTimeOperations extends App with LoggerHelper{
 
   val dateDf = spark.range(10)
     .withColumn("today", current_date())

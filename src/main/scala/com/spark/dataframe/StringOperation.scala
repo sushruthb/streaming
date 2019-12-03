@@ -2,7 +2,8 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.functions._
 import com.spark.dataframe.Constants._
-object StringOperation extends App {
+import com.spark.streaming.LoggerHelper
+object StringOperation extends App with LoggerHelper {
 
   df.show(5, false)
   //Converting first letter to upper case and other in lower case

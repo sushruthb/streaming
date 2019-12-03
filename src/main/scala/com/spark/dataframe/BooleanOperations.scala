@@ -2,7 +2,8 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.functions._
 import com.spark.dataframe.Constants._
-object BooleanOperations extends App {
+import com.spark.streaming.LoggerHelper
+object BooleanOperations extends App with LoggerHelper {
 
 
   df.show()

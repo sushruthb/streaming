@@ -3,7 +3,8 @@ package com.spark.dataframe
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import com.spark.dataframe.Constants._
-object DataFrameExamples extends App {
+import com.spark.streaming.LoggerHelper
+object DataFrameExamples extends App with LoggerHelper {
 
   //create sparksession
   val spark: SparkSession = SparkSession.builder().master("local[*]").appName("dataframe-examples").getOrCreate()

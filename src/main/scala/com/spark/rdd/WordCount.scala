@@ -1,11 +1,12 @@
 package com.spark.rdd
 
+import com.spark.streaming.LoggerHelper
 import org.apache.spark.{SparkConf, SparkContext}
 
 /*
   Simple Word Count Example
  */
-object WordCount extends App {
+object WordCount extends App with LoggerHelper{
   val conf = new SparkConf().setMaster("local").setAppName("Word-Count")
   val sc = new SparkContext(conf)
   sc.setLogLevel("ERROR")

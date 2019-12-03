@@ -1,8 +1,9 @@
 package com.spark.sql
 
+import com.spark.streaming.LoggerHelper
 import org.apache.spark.sql.SparkSession
 
-object BasicOperations extends App {
+object BasicOperations extends App with LoggerHelper{
 
 
   val spark = SparkSession.builder().master("local[*]").appName("spark-sql").getOrCreate()

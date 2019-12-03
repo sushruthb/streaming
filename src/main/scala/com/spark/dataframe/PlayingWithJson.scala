@@ -3,7 +3,8 @@ package com.spark.dataframe
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions._
 import com.spark.dataframe.Constants._
-object PlayingWithJson extends App {
+import com.spark.streaming.LoggerHelper
+object PlayingWithJson extends App with LoggerHelper{
 
   //creating a json
   val jsonDf: DataFrame =

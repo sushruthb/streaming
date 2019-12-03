@@ -2,7 +2,8 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.functions._
 import com.spark.dataframe.Constants._
-object ComplexOperation extends App {
+import com.spark.streaming.LoggerHelper
+object ComplexOperation extends App  with LoggerHelper{
 
   /*Types of Complex Operations
      Struct

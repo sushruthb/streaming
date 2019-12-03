@@ -2,8 +2,9 @@ package com.spark.dataframe
 
 import org.apache.spark.sql.functions._
 import com.spark.dataframe.Constants.spark
+import com.spark.streaming.LoggerHelper
 import spark.implicits._
-object JoinOperation extends App {
+object JoinOperation extends App with LoggerHelper{
 
   val person = Seq(
     (0, "Mahesh Chand",   0 , Seq(100)),

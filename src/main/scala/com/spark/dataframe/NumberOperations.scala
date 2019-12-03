@@ -3,7 +3,8 @@ package com.spark.dataframe
 import org.apache.spark.sql.Column
 import org.apache.spark.sql.functions._
 import com.spark.dataframe.Constants._
-object NumberOperations extends App {
+import com.spark.streaming.LoggerHelper
+object NumberOperations extends App with LoggerHelper{
 
   /*
   To modify the existing data. Recorded Quantity is incorrect. So update it.

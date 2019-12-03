@@ -4,9 +4,11 @@ import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{Column, DataFrame}
 import com.spark.dataframe.Constants._
-object AggregationOperation extends App {
+import com.spark.streaming.LoggerHelper
+object AggregationOperation extends App with LoggerHelper {
 
   //let's minimize the partition
+
   val modifiedDf: DataFrame = df.coalesce(5).toDF()
   modifiedDf.cache()
 

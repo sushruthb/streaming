@@ -1,10 +1,11 @@
 package com.spark.datasets
 
+import com.spark.streaming.LoggerHelper
 import org.apache.spark.sql.{Encoder, Encoders, SparkSession}
 
 case class Flight(DEST_COUNTRY_NAME: String, ORIGIN_COUNTRY_NAME: String, count: BigInt)
 
-object Examples extends App {
+object Examples extends App  with LoggerHelper{
 
   val spark = SparkSession.builder().master("local[*]").appName("dataset").getOrCreate()
 
