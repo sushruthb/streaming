@@ -11,6 +11,6 @@ object Constants {
     .format("csv")
     .option("header", "true")
     .option("inferSchema", "true")
-    .load("src/main/resources/retailer.csv")
+    .load("file:///src/main/resources/retailer.csv")
 
 }
