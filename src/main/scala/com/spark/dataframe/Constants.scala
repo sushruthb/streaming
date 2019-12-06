@@ -5,7 +5,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 object Constants {
 
   val spark: SparkSession = SparkSession.builder().appName("dataframe-operations").getOrCreate()
-val resource=getClass.getResourceAsStream("/retailer.csv").toString
+val resource=getClass.getResource("/retailer.csv")
   val df: DataFrame = spark
     .read
     .format("csv")

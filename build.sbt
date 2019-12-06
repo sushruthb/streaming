@@ -26,6 +26,9 @@ libraryDependencies ++= Seq(
 
 
 )
+
+unmanagedResourceDirectories in Compile += { baseDirectory.value / "src/main/resources"}
+
 resolvers += "confluent" at "http://packages.confluent.io/maven/"
 resolvers += "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/"
 resolvers += "MavenCentral" at "https://mvnrepository.com/"
