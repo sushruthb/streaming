@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/streaming_3088.iml" filepath="$PROJECT_DIR$/.idea/modules/streaming_3088.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/streaming_3088-build.iml" filepath="$PROJECT_DIR$/.idea/modules/streaming_3088-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" filepath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StructuredToKafka-build.iml" filepath="$PROJECT_DIR$/.idea/modules/StructuredToKafka-build.iml" />
     </modules>
   </component>
 </project>
