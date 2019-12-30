@@ -22,8 +22,7 @@ libraryDependencies ++= Seq(
   "org.apache.hive" % "hive-jdbc" % "3.1.1",
   "com.datastax.cassandra" % "cassandra-driver-core" % "3.5.1",
   "org.ehcache" % "ehcache" % "3.3.1",
-  "org.apache.logging.log4j" % "log4j-api" % "2.12.0",
-  "org.apache.spark" %% "spark-assembly" % "1.1.0"
+  "org.apache.logging.log4j" % "log4j-api" % "2.12.0"
 
 
 
