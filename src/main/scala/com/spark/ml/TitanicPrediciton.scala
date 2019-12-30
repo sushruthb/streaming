@@ -10,6 +10,7 @@ object TitanicPrediciton extends LoggerHelper {
     val df =spark.read.csv("/user/titanic.csv")
     df.printSchema()
 
+
   }
 
 }
