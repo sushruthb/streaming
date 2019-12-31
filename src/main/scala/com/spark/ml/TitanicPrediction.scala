@@ -8,7 +8,8 @@ object TitanicPrediction {
     Logger.getLogger("org").setLevel(Level.ERROR)
       val spark=SparkSession.builder().appName("ML").master("local[*]").getOrCreate()
 
-    val df =spark.read.csv("src/main/resources/ml/titanic.csv")
+   // val df =spark.read.csv("src/main/resources/ml/titanic.csv")
+   val df =spark.read.csv("/user/titanic.csv")
     df.printSchema()
 
 
