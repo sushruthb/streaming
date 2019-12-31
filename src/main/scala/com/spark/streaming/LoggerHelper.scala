@@ -4,7 +4,7 @@ import org.apache.log4j.{Level, LogManager}
 
 trait LoggerHelper {
 
-  private val logger = LogManager.getLogger(this.getClass)
+  private val logger = LogManager.getLogger("org")
 
   logger.setLevel(Level.INFO)
 

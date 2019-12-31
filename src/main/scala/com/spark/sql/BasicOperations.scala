@@ -9,7 +9,7 @@ object BasicOperations extends App with LoggerHelper{
   val spark = SparkSession.builder().master("local[*]").appName("spark-sql").getOrCreate()
 
   //reading data as dataFrame
-  val df = spark.read.format("json").load("src/main/resources/2015-summary.json")
+  val df = spark.read.format("json").load("file:///src/main/resources/2015-summary.json")
 
   df.show(false)
   //Df => Sql
