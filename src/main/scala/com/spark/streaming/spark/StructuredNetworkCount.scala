@@ -25,7 +25,7 @@ object StructuredNetworkCount {
 
     // Start running the query that prints the running counts to the console
     val query = wordCounts.writeStream
-      .outputMode("update")
+      .outputMode("append")
       .format("console")
       .start()
 
