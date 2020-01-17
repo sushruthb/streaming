@@ -6,17 +6,17 @@ object ReadCSVStreaming {
   def main(args:Array[String]): Unit = {
     val spark = SparkSession
       .builder
-      .appName( "StructuredNetworkWordCount" )
+      .appName( "ReadCSVStreaming" )
       .getOrCreate()
 
     import spark.implicits._
 
 
-    val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
+    //val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
     val csvDF = spark
       .readStream
       .option("sep", ",")
-      .schema(userSchema)      // Specify schema of the csv files
+      .option("inferSchema","true")    // Specify schema of the csv files
       .csv("/data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
 
     val words = csvDF.as[String].flatMap(_.split(","))
