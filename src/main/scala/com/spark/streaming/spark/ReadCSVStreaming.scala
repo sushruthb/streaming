@@ -14,7 +14,7 @@ object ReadCSVStreaming {
 
     //val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
     val csvDF = spark
-      .readStream
+      .read
       .option("sep", ",")
       .option("inferSchema","true")    // Specify schema of the csv files
       .csv("/data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
