@@ -29,7 +29,6 @@ object ReadCSVStreaming {
       .outputMode("update")
       .format("console")
       .start()
-
     query.awaitTermination()
   }
 
