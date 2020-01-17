@@ -19,7 +19,7 @@ object StructuredNetworkCount {
 
     // Split the lines into words
     val words = lines.as[String].flatMap(_.split(" "))
-
+    words.withWatermark("","10")
     // Generate running word count
     val wordCounts = words.groupBy("value").count()
 
