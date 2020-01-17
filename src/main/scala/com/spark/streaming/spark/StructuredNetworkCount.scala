@@ -13,7 +13,7 @@ object StructuredNetworkCount {
 
     val lines = spark.readStream
       .format("socket")
-      .option("host", "localhost")
+      .option("host", "10.76.110.207")
       .option("port", 9999)
       .load()
 
