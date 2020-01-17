@@ -12,10 +12,10 @@ object ReadCSVStreaming {
     import spark.implicits._
 
 
-    val userSchema = new StructType().add("code", "integer").add("description", "string").add("SortOrder","integer")
+    val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
     val csvDF = spark
       .readStream
-      .option("sep", ";")
+      .option("sep", ",")
       .schema(userSchema)      // Specify schema of the csv files
       .csv("/data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
 
