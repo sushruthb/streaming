@@ -19,7 +19,7 @@ object ReadCSVStreaming {
       .schema(userSchema)      // Specify schema of the csv files
       .csv("/data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
 
-    val words = csvDF.as[String].flatMap(_.split(" "))
+    val words = csvDF.as[String].flatMap(_.split(","))
 
     // Generate running word count
     val wordCounts = words.groupBy("value").count()
