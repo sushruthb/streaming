@@ -18,7 +18,10 @@ object ReadCSVStreaming {
       .option("sep", ",")
       .option("header", "true")
       .schema(userSchema)   // Specify schema of the csv files
-      .csv("hdfs:///data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
+      .format("csv")
+      .load("hdfs:///data/DimenLookupAge8317.csv")
+     // .csv("hdfs:///data/DimenLookupAge8317.csv") // Equivalent to format("csv").load("/path/to/directory")
+
 
     val words = csvDF.as[String].flatMap(_.split(","))
 
