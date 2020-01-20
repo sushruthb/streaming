@@ -12,12 +12,12 @@ object ReadCSVStreaming {
     import spark.implicits._
 
 
-    //val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
+    val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
     val csvDF = spark
       .read
       .option("sep", ",")
-      .option("inferSchema","true")    // Specify schema of the csv files
       .option("header", "true")
+      .schema(userSchema)   // Specify schema of the csv files
       .csv("hdfs:///data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
 
     val words = csvDF.as[String].flatMap(_.split(","))
