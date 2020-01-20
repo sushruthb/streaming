@@ -1,7 +1,10 @@
 package com.spark.streaming.spark
 
-import org.apache.spark.sql.SparkSession
+import com.spark.datasets.Flight
+import org.apache.spark.sql.{Encoder, Encoders, SparkSession}
 import org.apache.spark.sql.types.StructType
+
+case class Flight(Code: Integer, Description: String, SortOrder: String)
 object ReadCSVStreaming {
   def main(args:Array[String]): Unit = {
     val spark = SparkSession
@@ -12,11 +15,12 @@ object ReadCSVStreaming {
     import spark.implicits._
 
 
-    val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
+    //val userSchema = new StructType().add("Code", "integer").add("Description", "string").add("SortOrder","integer")
+    implicit val flightEncoder: Encoder[Flight] = Encoders.product[Flight]
     val csvDF = spark
       .read
-      .option("sep", ",")
-      .schema(userSchema)   // Specify schema of the csv files
+      //.option("sep", ",")
+      //.schema(userSchema)   // Specify schema of the csv files
       .format("csv")
       .load("hdfs:///data/DimenLookupAge8317.csv")
      // .csv("hdfs:///data/DimenLookupAge8317.csv") // Equivalent to format("csv").load("/path/to/directory")
