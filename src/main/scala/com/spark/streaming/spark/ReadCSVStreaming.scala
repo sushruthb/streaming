@@ -16,7 +16,6 @@ object ReadCSVStreaming {
     val csvDF = spark
       .read
       .option("sep", ",")
-      .option("header", "true")
       .schema(userSchema)   // Specify schema of the csv files
       .format("csv")
       .load("hdfs:///data/DimenLookupAge8317.csv")
