@@ -18,7 +18,7 @@ object ReadCSVStreaming {
       .option("sep", ",")
       .option("inferSchema","true")    // Specify schema of the csv files
       .option("header", "true")
-      .csv("data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
+      .csv("hdfs:///data/DimenLookupAge8317.csv")    // Equivalent to format("csv").load("/path/to/directory")
 
     val words = csvDF.as[String].flatMap(_.split(","))
 
