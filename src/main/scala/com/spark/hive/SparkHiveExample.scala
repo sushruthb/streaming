@@ -31,13 +31,14 @@ object SparkHiveExample {
     }
 
     if (spark.catalog.databaseExists( "hive" )) {
-     // sql( "drop database hive cascade" )
+      // sql( "drop database hive cascade" )
 
-      sql("use hive")
-      sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
+      sql( "use hive" )
+      if (!spark.catalog.tableExists( "src" )) {
+      sql( "CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive" )
       // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
-      sql("load data inpath '/user/hdfs/data/kv1.txt' into table src")
-
+      sql( "load data inpath '/user/hdfs/data/kv1.txt' into table src" )
+      }
       sql("SELECT * FROM src").show()
       // Aggregation queries are also supported.
       sql("SELECT COUNT(*) FROM src").show()
