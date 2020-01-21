@@ -23,6 +23,9 @@ object SparkHiveExample {
 
     import spark.implicits._
     import spark.sql
+    if(spark.catalog.databaseExists("hive")){
+      sql("use hive")
+    }
 
     if (!spark.catalog.databaseExists( "hive" )) {
       sql( "create database hive" )
@@ -58,6 +61,7 @@ object SparkHiveExample {
     }
     // Save DataFrame to the Hive managed table
     val df = spark.table("src")
+
     df.write.mode(SaveMode.Overwrite).saveAsTable("hive_records")
     // After insertion, the Hive managed table has data now
     sql("SELECT * FROM hive_records").show()
