@@ -2,6 +2,8 @@ package com.spark.hive
 
 import java.io.File
 
+import javax.script.ScriptException
+import org.apache.log4j._
 import org.apache.spark.sql.{Row, SaveMode, SparkSession}
 
 object SparkHiveExample {
@@ -11,7 +13,7 @@ object SparkHiveExample {
     //val warehouseLocation = new File("/apps/spark/warehouse").getAbsolutePath
 
     val warehouseLocation = new File("/warehouse/tablespace/managed/hive").getAbsolutePath
-
+    Logger.getLogger("org").setLevel(Level.ERROR)
     val spark = SparkSession
       .builder()
       .appName("Spark Hive Example")
@@ -21,7 +23,13 @@ object SparkHiveExample {
 
     import spark.implicits._
     import spark.sql
-    sql("create database hive")
+    try{
+      sql("create database hive")
+    }
+    catch {
+      case e: ScriptException => e.printStackTrace()
+    }
+
     sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
    // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
     sql("SELECT * FROM src").show()
