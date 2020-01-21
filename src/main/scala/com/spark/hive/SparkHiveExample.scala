@@ -34,7 +34,7 @@ object SparkHiveExample {
     }
     if (!spark.catalog.tableExists( "src" )) {
 
-    sql( "drop table src cascade" )
+    sql( "drop table src" )
       sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
       sql("load data inpath '/user/hdfs/data/kv1.txt' into table src")
     // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
@@ -61,7 +61,7 @@ object SparkHiveExample {
 
     // `USING hive`
     if(!spark.catalog.tableExists("hive_records")){
-      sql("drop table hive_records cascade")
+      sql("drop table hive_records")
     sql("CREATE TABLE hive_records(key int, value string) STORED AS PARQUET")
     }
     // Save DataFrame to the Hive managed table
