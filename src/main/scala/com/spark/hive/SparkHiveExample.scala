@@ -32,7 +32,7 @@ object SparkHiveExample {
       sql("create database hive")
       sql("use hive")
     }
-    if (spark.catalog.tableExists( "src" )) {
+    if (!spark.catalog.tableExists( "src" )) {
 
     sql( "drop table src cascade" )
       sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
