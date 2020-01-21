@@ -53,13 +53,14 @@ object SparkHiveExample {
     sql("SELECT * FROM records r JOIN src s ON r.key = s.key").show()
 
     // `USING hive`
+    if(!spark.catalog.databaseExists("hive_records")){
     sql("CREATE TABLE hive_records(key int, value string) STORED AS PARQUET")
+    }
     // Save DataFrame to the Hive managed table
     val df = spark.table("src")
     df.write.mode(SaveMode.Overwrite).saveAsTable("hive_records")
     // After insertion, the Hive managed table has data now
     sql("SELECT * FROM hive_records").show()
-
 
 
     spark.close()
