@@ -9,29 +9,29 @@ import org.apache.spark.sql.{Row, SaveMode, SparkSession}
 object SparkHiveExample {
   case class Record(key: Int, value: String)
 
-  def main(args:Array[String]): Unit ={
+  def main(args:Array[String]): Unit = {
     //val warehouseLocation = new File("/apps/spark/warehouse").getAbsolutePath
 
-    val warehouseLocation = new File("/warehouse/tablespace/managed/hive").getAbsolutePath
-    Logger.getLogger("org").setLevel(Level.ERROR)
+    val warehouseLocation = new File( "/warehouse/tablespace/managed/hive" ).getAbsolutePath
+    Logger.getLogger( "org" ).setLevel( Level.ERROR )
     val spark = SparkSession
       .builder()
-      .appName("Spark Hive Example")
-      .config("spark.sql.warehouse.dir", warehouseLocation)
+      .appName( "Spark Hive Example" )
+      .config( "spark.sql.warehouse.dir", warehouseLocation )
       .enableHiveSupport()
       .getOrCreate()
 
     import spark.implicits._
     import spark.sql
-    try{
-      sql("create database hive")
-    }
-    catch {
-      case e: ScriptException => e.printStackTrace()
+
+    if (!spark.catalog.databaseExists( "hive" )) {
+      sql( "create database hive" )
     }
 
-    sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
-   // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
+    if (!spark.catalog.tableExists( "src" )) {
+    sql( "CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive" )
+    // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
+  }
     sql("SELECT * FROM src").show()
     // Aggregation queries are also supported.
     sql("SELECT COUNT(*) FROM src").show()
