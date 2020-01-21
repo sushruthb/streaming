@@ -8,7 +8,7 @@ object SparkHiveExample {
   case class Record(key: Int, value: String)
 
   def main(args:Array[String]): Unit ={
-    val warehouseLocation = new File("hdfs:///warehouse").getAbsolutePath
+    val warehouseLocation = new File("/warehouse").getAbsolutePath
 
     val spark = SparkSession
       .builder()
