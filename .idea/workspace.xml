@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="" />
+    <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0bdbdb6a5513e888db44$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0bdbdb6a5513e888db44.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0bdbdb6a5513e888db44.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,8 +138,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4732635308962" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="256329305" />
+        <entry key="$PROJECT_DIR$" value="4734438540118" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="2147642383" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="3333014633" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
@@ -143,6 +147,7 @@
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$/../../ML" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../../streaming-master" value="PREVIEW" />
       </map>
     </option>
