@@ -32,18 +32,15 @@ object SparkHiveExample {
 
     if (spark.catalog.databaseExists( "hive" )) {
       sql( "drop database hive cascade" )
-    }else
-      {
-        sql("create database hive")
+      sql("create database hive")
 
-      }
-
-    if (spark.catalog.tableExists( "src" )) {
-    sql( "drop table src" )
-    // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
-  }else{
-      sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
     }
+    if (spark.catalog.tableExists( "src" )) {
+    sql( "drop table src cascade" )
+      sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
+      sql("load data inpath /user/hdfs/data/kv1.txt")
+    // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
+  }
     sql("SELECT * FROM src").show()
     // Aggregation queries are also supported.
     sql("SELECT COUNT(*) FROM src").show()
@@ -65,7 +62,8 @@ object SparkHiveExample {
     sql("SELECT * FROM records r JOIN src s ON r.key = s.key").show()
 
     // `USING hive`
-    if(!spark.catalog.databaseExists("hive_records")){
+    if(!spark.catalog.tableExists("hive_records")){
+      sql("drop table hive_records cascade")
     sql("CREATE TABLE hive_records(key int, value string) STORED AS PARQUET")
     }
     // Save DataFrame to the Hive managed table
