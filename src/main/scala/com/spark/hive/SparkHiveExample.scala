@@ -31,7 +31,7 @@ object SparkHiveExample {
     }
 
     if (spark.catalog.databaseExists( "hive" )) {
-      sql( "drop database hive" )
+      sql( "drop database hive cascade" )
     }else
       {
         sql("create database hive")
