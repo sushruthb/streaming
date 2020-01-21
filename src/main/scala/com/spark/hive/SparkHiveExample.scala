@@ -21,7 +21,7 @@ object SparkHiveExample {
     import spark.sql
     sql("create database hive")
     sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
-//    sql("LOAD DATA LOCAL INPATH 'examples/src/main/resources/kv1.txt' INTO TABLE src")
+    sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
 
     spark.close()
   }
