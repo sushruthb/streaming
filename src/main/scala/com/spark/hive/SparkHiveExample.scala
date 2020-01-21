@@ -23,18 +23,27 @@ object SparkHiveExample {
 
     import spark.implicits._
     import spark.sql
+
+    sql("show databases")
+
     if(spark.catalog.databaseExists("hive")){
       sql("use hive")
     }
 
-    if (!spark.catalog.databaseExists( "hive" )) {
-      sql( "create database hive" )
-    }
+    if (spark.catalog.databaseExists( "hive" )) {
+      sql( "drop database hive" )
+    }else
+      {
+        sql("create database hive")
 
-    if (!spark.catalog.tableExists( "src" )) {
-    sql( "CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive" )
+      }
+
+    if (spark.catalog.tableExists( "src" )) {
+    sql( "drop table src" )
     // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
-  }
+  }else{
+      sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
+    }
     sql("SELECT * FROM src").show()
     // Aggregation queries are also supported.
     sql("SELECT COUNT(*) FROM src").show()
