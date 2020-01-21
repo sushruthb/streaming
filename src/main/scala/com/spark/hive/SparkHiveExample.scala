@@ -8,7 +8,7 @@ object SparkHiveExample {
   case class Record(key: Int, value: String)
 
   def main(args:Array[String]): Unit ={
-    val warehouseLocation = new File("/warehouse/tablespace/managed/hive").getAbsolutePath
+    val warehouseLocation = new File("/apps/spark/warehouse").getAbsolutePath
 
     val spark = SparkSession
       .builder()
@@ -19,7 +19,7 @@ object SparkHiveExample {
 
     import spark.implicits._
     import spark.sql
-    sql("use hive")
+    sql("create database hive")
     sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING)")
 //    sql("LOAD DATA LOCAL INPATH 'examples/src/main/resources/kv1.txt' INTO TABLE src")
 
