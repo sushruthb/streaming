@@ -28,8 +28,8 @@ object SparkHiveExample {
 
 
     if (spark.catalog.databaseExists( "hive" )) {
-      sql( "drop database hive cascade" )
-      sql("create database hive")
+     // sql( "drop database hive cascade" )
+    //  sql("create database hive")
       sql("use hive")
       sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
       // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
