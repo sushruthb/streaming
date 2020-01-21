@@ -38,7 +38,7 @@ object SparkHiveExample {
     if (spark.catalog.tableExists( "src" )) {
     sql( "drop table src cascade" )
       sql("CREATE TABLE IF NOT EXISTS src (key INT, value STRING) using hive")
-      sql("load data inpath /user/hdfs/data/kv1.txt")
+      sql("load data inpath '/user/hdfs/data/kv1.txt' into table src")
     // sql("LOAD DATA INPATH '/user/hdfs/data/kv1.txt' INTO TABLE src")
   }
     sql("SELECT * FROM src").show()
