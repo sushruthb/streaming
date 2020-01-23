@@ -8,6 +8,8 @@ object SparkHive {
     import org.apache.log4j._
 
     Logger.getLogger("org").setLevel(Level.ERROR)
+
+
     case class Record(eid:Int, name:String,salary:String, destination:String)
 
     // warehouseLocation points to the default location for managed databases and tables

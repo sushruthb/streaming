@@ -2,6 +2,7 @@ package com.spark.hive
 
 import java.io.File
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 
@@ -9,6 +10,9 @@ object SparkHive {
   def main(args:Array[String]): Unit = {
     val warehouseLocation = new File( "/warehouse/tablespace/managed/hive" ).getAbsolutePath
     Logger.getLogger( "org" ).setLevel( Level.ERROR )
+
+    val conf=ConfigFactory.load()
+
     val spark = SparkSession
       .builder()
       .appName( "Spark Hive Example" )
@@ -34,10 +38,10 @@ object SparkHive {
       sql( "use hive" )
 
       if (!spark.catalog.tableExists( "DimenLookupAge" )) {
-        sql( " create table if not exists DimenLookupAge(code Int,description String, sortOrder INT) row format delimited fields terminated by \",\" lines terminated by \"\\n\"" )
+        sql( conf.getString("hive1.query"))
       }
 
-      sql( "load data inpath '/user/hdfs/data/' into table DimenLookupAge" )
+      sql( conf.getString("load1.data") )
 
 
      // peopleDFCsv.toDF().write.saveAsTable( "DimenLookupAge" )
