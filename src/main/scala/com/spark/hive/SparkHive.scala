@@ -22,5 +22,12 @@ object SparkHive {
     //sql("create database hivetest")
     //sql("CREATE TABLE IF NOT EXISTS employee(id INT, name STRING, age INT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'")
 
+    val peopleDFCsv = spark.read.format("csv")
+      .option("sep", ";")
+      .option("inferSchema", "true")
+      .option("header", "true")
+      .load("/user/hdfs/data/DimenLookupAge8317.csv")
+
+    peopleDFCsv.show(10)
   }
 }
