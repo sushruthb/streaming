@@ -29,5 +29,19 @@ object SparkHive {
       .load("/user/hdfs/data/DimenLookupAge8317.csv")
 
     peopleDFCsv.show(10)
+
+    if(spark.catalog.databaseExists("hive")) {
+      sql( "use hive" )
+
+      if (!spark.catalog.tableExists( "DimenLookupAge" )) {
+        sql( "CREATE TABLE IF NOT EXISTS DimenLookupAge(code INT, description STRING, sortOrderINT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'" )
+      }
+
+      sql( "load data inpath '/user/hdfs/data/' into table DimenLookupAge" )
+
+
+     // peopleDFCsv.toDF().write.saveAsTable( "DimenLookupAge" )
+
+    }
   }
 }
