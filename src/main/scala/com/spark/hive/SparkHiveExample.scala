@@ -18,6 +18,7 @@ object SparkHiveExample {
       .builder()
       .appName( "Spark Hive Example" )
       .config( "spark.sql.warehouse.dir", warehouseLocation )
+      .config("inferSchema","true")
       .enableHiveSupport()
       .getOrCreate()
 
