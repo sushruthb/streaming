@@ -34,7 +34,7 @@ object SparkHive {
       sql( "use hive" )
 
       if (!spark.catalog.tableExists( "DimenLookupAge" )) {
-        sql( "CREATE TABLE IF NOT EXISTS DimenLookupAge(code INT, description STRING, sortOrderINT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'" )
+        sql( " create table if not exists DimenLookupAge(code Int,description String, sortOrder INT) row format delimited fields terminated by \",\" lines terminated by \"\\n\"" )
       }
 
       sql( "load data inpath '/user/hdfs/data/' into table DimenLookupAge" )
