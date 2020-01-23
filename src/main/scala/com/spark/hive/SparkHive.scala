@@ -18,9 +18,9 @@ object SparkHive {
 
     import spark.implicits._
     import spark.sql
-    spark.sqlContext.sql("show databases")
-    spark.sqlContext.sql("create database hivetest")
-    spark.sqlContext.sql("CREATE TABLE IF NOT EXISTS employee(id INT, name STRING, age INT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'")
+    sql("show databases").show()
+    //sql("create database hivetest")
+    //sql("CREATE TABLE IF NOT EXISTS employee(id INT, name STRING, age INT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'")
 
   }
 }
