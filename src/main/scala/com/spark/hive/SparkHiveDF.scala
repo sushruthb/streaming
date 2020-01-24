@@ -22,7 +22,7 @@ object SparkHiveDF {
       .getOrCreate()
 
   val peopleDFCsv = spark.read.format("csv")
-    .option("sep", ";")
+    .option("sep", ",")
     .option("inferSchema", "true")
     .option("header", "true")
     .load(conf.getString("csv1.data"))
