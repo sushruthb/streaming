@@ -27,7 +27,7 @@ import spark.implicits._
     StructField("year", IntegerType)
   ))
   //Create the Streaming DataFrame
-  val streamingDataFrame = spark.readStream.schema(mySchema).csv("/user/hdfs/")
+  val streamingDataFrame = spark.readStream.schema(mySchema).csv("/user/hdfs/data/kafka")
 
     streamingDataFrame.printSchema()
     //Publish the Stream to Kafka
