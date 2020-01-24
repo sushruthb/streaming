@@ -30,7 +30,7 @@ object SparkHiveDF {
   peopleDFCsv.show(10)
 
     import spark.sql
-    sql("")
+
     if(spark.catalog.databaseExists("hive")) {
       sql( "use hive" )
 
