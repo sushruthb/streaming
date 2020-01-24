@@ -32,14 +32,17 @@ object SparkHiveDF {
     import spark.sql
 
     if(spark.catalog.databaseExists("hive")) {
+
       sql( "use hive" )
 
       if (!spark.catalog.tableExists( "DimenLookupAge1" )) {
-        sql( conf.getString( "hive2.query" ) )
+        //sql( conf.getString( "hive2.query" ) )
+        peopleDFCsv.toDF().write.saveAsTable( "DimenLookupAge1" )
       }
     }
 
-  peopleDFCsv.toDF().write.saveAsTable( "DimenLookupAge1" )
+
+    spark.close()
 
 }
 }
