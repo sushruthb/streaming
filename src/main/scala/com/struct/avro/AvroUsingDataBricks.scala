@@ -4,6 +4,7 @@ import java.io.File
 
 import com.databricks.spark.avro._
 import org.apache.avro.Schema
+import org.apache.log4j._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{SaveMode, SparkSession}
 
@@ -17,7 +18,7 @@ object AvroUsingDataBricks {
 
   def main(args: Array[String]): Unit = {
 
-
+    Logger.getLogger("org").setLevel(Level.ERROR)
     val spark: SparkSession = SparkSession.builder()
       .appName("SparkAVRO.com")
       .getOrCreate()
@@ -97,7 +98,7 @@ object AvroUsingDataBricks {
     /**
      * Spark SQL
      */
-    sql("CREATE TEMPORARY VIEW PERSON USING com.databricks.spark.avro OPTIONS (path \"person.avro\")")
+    sql("CREATE TEMPORARY VIEW PERSON USING com.databricks.spark.avro OPTIONS (path \"/user/hdfs/data/avro/person.avro\")")
     val df2 = sql("SELECT * FROM PERSON").show()
   }
 }
