@@ -2,8 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_databricks_spark_avro_2_11_4_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/project/target/config-classes/$1af7c93159d180a51d84.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c6b1fb76c877720ec2ce.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$32e912fbee64e1d7dbed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$953b5ef08f928b242691.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ba435b9b37d81e6ee724.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$bb0f53b9decd31123d1a.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$d74071e36e04c17a0e19.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$e5ba2ea3504ee5482929.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ee6b0ea5bdc7d10d2148.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ef9883128d43a7926c97$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ef9883128d43a7926c97.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ef9883128d43a7926c97.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/AvroUsingDataBricks.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_avro_2_11_2_4_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/StructToKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/StructToKafka.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$6cf1e74200d44b40cac2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$1af7c93159d180a51d84$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$6cf1e74200d44b40cac2.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$1af7c93159d180a51d84.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$6cf1e74200d44b40cac2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e6621176699f3f9dd8d7$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c6b1fb76c877720ec2ce$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e6621176699f3f9dd8d7.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c6b1fb76c877720ec2ce.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e6621176699f3f9dd8d7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0d621a79b9e00a441e3c$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$bb0f53b9decd31123d1a$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0d621a79b9e00a441e3c.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0d621a79b9e00a441e3c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$21a7a41aa6a52144228e$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$21a7a41aa6a52144228e.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$32e912fbee64e1d7dbed.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$21a7a41aa6a52144228e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2e6a6754ae56900448cc$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$ee6b0ea5bdc7d10d2148$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2e6a6754ae56900448cc.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$953b5ef08f928b242691.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2e6a6754ae56900448cc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$64c4fafb95a3bf25327d$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$32e912fbee64e1d7dbed$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$64c4fafb95a3bf25327d.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$ba435b9b37d81e6ee724.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$64c4fafb95a3bf25327d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$66d16a16ebc99a09781f$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$d74071e36e04c17a0e19$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$66d16a16ebc99a09781f.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$d74071e36e04c17a0e19.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$66d16a16ebc99a09781f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7b940f6bc90a5f4b66a5$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$e5ba2ea3504ee5482929$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7b940f6bc90a5f4b66a5.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$bb0f53b9decd31123d1a.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7b940f6bc90a5f4b66a5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$82790d8695901a7c65e2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$ba435b9b37d81e6ee724$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$82790d8695901a7c65e2.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$e5ba2ea3504ee5482929.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$82790d8695901a7c65e2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ec86dc1da0e24d689d4f$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$953b5ef08f928b242691$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ec86dc1da0e24d689d4f.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$ee6b0ea5bdc7d10d2148.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ec86dc1da0e24d689d4f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/streaming-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/streaming-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/streaming-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/streaming-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-streaming-build-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/avro/AvroSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/AvroSink.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceAvro.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/avro/KafkaProduceAvro.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/KafkaSink.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/ReadFromKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/struct/kafka/ReadFromKafka.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +218,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="2147642383" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1657739080" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="3333014633" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
@@ -190,10 +271,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1577770078054" />
-    <state x="2645" y="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579780966911">
+    <state x="2645" y="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580120488834">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2645" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1579780966911" />
+    <state x="2645" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580120488834" />
     <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577770924314">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

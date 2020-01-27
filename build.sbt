@@ -16,7 +16,8 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % "2.3.2",
   "org.apache.spark" %% "spark-hive" % "2.3.2",
   "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.3.2",
-  "org.apache.spark" %% "spark-avro" % "2.4.4",
+  // https://mvnrepository.com/artifact/com.databricks/spark-avro
+  "com.databricks" %% "spark-avro" % "4.0.0",
   "com.typesafe" % "config" % "1.3.2",
   "com.typesafe.akka" %% "akka-actor" % "2.5.14",
   "org.apache.hive" % "hive-jdbc" % "3.1.1",

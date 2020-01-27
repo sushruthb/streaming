@@ -9,7 +9,6 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 import org.apache.log4j._
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 import org.apache.spark.sql._
-import com.struct.kafka.KafkaSink
 import com.typesafe.config.ConfigFactory
 
 object KafkaProduceAvro {

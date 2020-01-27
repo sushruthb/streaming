@@ -5,10 +5,7 @@ import java.io.File
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.avro.{Schema, SchemaBuilder}
-import org.apache.spark
-import org.apache.spark.sql.avro._
-import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
-import org.apache.spark.sql.functions.{get_json_object, json_tuple}
+
 object AvroSink {
     def main(args:Array[String]): Unit = {
       Logger.getLogger("org").setLevel(Level.ERROR)
