@@ -9,7 +9,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql._
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 import org.apache.spark.sql.functions.{col, from_json}
-import org.apache.spark.sql.avro._
+
 object AvroKafkaSink {
 
    def main(args: Array[String]): Unit = {

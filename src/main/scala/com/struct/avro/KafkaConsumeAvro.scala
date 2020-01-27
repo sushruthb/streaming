@@ -4,7 +4,7 @@ import java.io.File
 import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.avro._
+
 import org.apache.avro.Schema
 import java.nio.file.Files
 import java.nio.file.Paths;
