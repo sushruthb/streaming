@@ -27,7 +27,8 @@ object AvroUsingDataBricks {
       ("Michael ","Rose","",2010,3,"M",4000),
       ("Robert ","","Williams",2010,3,"M",4000),
       ("Maria ","Anne","Jones",2005,5,"F",4000),
-      ("Jen","Mary","Brown",2010,7,"",-1)
+      ("Jen","Mary","Brown",2010,7,"",-1),
+      ("Srimannarayana","Bhagavanta","Om",2010,7,"MF", 99999)
     )
 
     val columns = Seq("firstname","middlename","lastname","dob_year",
