@@ -98,7 +98,7 @@ object AvroUsingDataBricks {
     /**
      * Spark SQL
      */
- //   sql("CREATE TEMPORARY VIEW PERSON USING com.databricks.spark.avro OPTIONS (path \"/user/hdfs/data/avro/person.avro\")")
-   // val df2 = sql("SELECT * FROM PERSON").show()
+    sql("CREATE TEMPORARY VIEW PERSON USING com.databricks.spark.avro OPTIONS (path \"/user/hdfs/data/avro/person.avro\")")
+    val df2 = sql("SELECT * FROM PERSON").show()
   }
 }
