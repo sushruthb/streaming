@@ -7,10 +7,10 @@ import com.spark.streaming.LoggerHelper
 object DataFrameExamples extends App with LoggerHelper {
 
   //create sparksession
-  val spark: SparkSession = SparkSession.builder().master("local[*]").appName("dataframe-examples").getOrCreate()
+  val spark: SparkSession = SparkSession.builder().appName("dataframe-examples").getOrCreate()
 
   //read json file as dataframe
-  val df: DataFrame = spark.read.json("src/main/resources/2015-summary.json")
+  val df: DataFrame = spark.read.json("file:///src/main/resources/2015-summary.json")
 
   //shows only first 20 rows
   df.show()
