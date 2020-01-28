@@ -34,5 +34,5 @@ object DataFrameExamples extends App with LoggerHelper {
   df.filter(col("count") > 23).show(4)
 
   df.createOrReplaceTempView("dftable")
-  sql("select * from dftable;").show(4)
+  sql("select * from dftable").show(4)
 }
