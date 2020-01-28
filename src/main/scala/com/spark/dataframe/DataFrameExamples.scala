@@ -8,7 +8,7 @@ object DataFrameExamples extends App with LoggerHelper {
 
   //create sparksession
   val spark: SparkSession = SparkSession.builder().appName("dataframe-examples").getOrCreate()
-
+  import spark.sql
   //read json file as dataframe
   val df: DataFrame = spark.read.json("/user/hdfs/data/2015-summary.json")
 
@@ -34,5 +34,5 @@ object DataFrameExamples extends App with LoggerHelper {
   df.filter(col("count") > 23).show(4)
 
   df.createOrReplaceTempView("dftable")
-  df.sqlContext.sql("select * from dftable;").show(4)
+  sql("select * from dftable;").show(4)
 }
