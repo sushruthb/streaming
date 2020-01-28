@@ -86,7 +86,7 @@ object AvroUsingDataBricks {
      * Explicit schema
      */
     val schemaAvro = new Schema.Parser()
-      .parse(new File("hdfs:///user/hdfs/data/avro/person.avsc"))
+      .parse(new File("src/main/resources/person.avsc"))
 
     spark
       .read
