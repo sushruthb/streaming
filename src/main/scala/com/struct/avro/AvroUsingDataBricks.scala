@@ -86,9 +86,9 @@ object AvroUsingDataBricks {
      * Explicit schema
      */
 
-    spark.sparkContext.hadoopConfiguration.set("avro.mapred.ignore.inputs.without.extension", "false")
+    //spark.sparkContext.hadoopConfiguration.set("avro.mapred.ignore.inputs.without.extension", "false")
     val schemaAvro = new Schema.Parser()
-      .parse(new File("/user/hdfs/data/avro/person.avsc"))
+      .parse(new File("/user/hdfs/data/avro/**"))
 
     spark
       .read
