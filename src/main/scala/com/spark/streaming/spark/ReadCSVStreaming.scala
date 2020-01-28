@@ -1,6 +1,6 @@
 package com.spark.streaming.spark
 
-import com.spark.datasets.Flight
+
 import org.apache.spark.sql.{Encoder, Encoders, SparkSession}
 import org.apache.spark.sql.types.StructType
 
