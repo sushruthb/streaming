@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="" />
+    <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/dataframe/DataFrameExamples.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/dataframe/DataFrameExamples.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,5 +244,16 @@
     </state>
     <state x="2102" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580199673466" />
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577785377906" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/spark/streaming/spark/ReadCSVStreaming.scala</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
