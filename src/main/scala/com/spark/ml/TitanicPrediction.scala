@@ -23,7 +23,10 @@ object TitanicPrediction {
     df.head()
 
     val inputs=df.drop("Survived")
-    val target=df("Survived")
+    val target=inputs.select("Survived")
+
+    target.show()
+
 
 
 
