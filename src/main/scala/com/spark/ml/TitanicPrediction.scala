@@ -11,6 +11,15 @@ object TitanicPrediction {
    // val df =spark.read.csv("src/main/resources/ml/titanic.csv")
    val df =spark.read.csv("/user/hdfs/data/titanic.csv")
     df.printSchema()
+    df.head()
+
+    df.drop("PassengerId","Name","SibSp","Parch","Ticket","Cabin","Embarked")
+    df.head()
+
+    val inputs=df.drop("Survived")
+    val target=df("Survived")
+
+
 
 
 
