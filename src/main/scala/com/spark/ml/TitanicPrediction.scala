@@ -22,10 +22,10 @@ object TitanicPrediction {
     val dropVals=df.drop("PassengerId","Name","SibSp","Parch","Ticket","Cabin","Embarked")
     dropVals.show(5)
 
-   // val inputs=df.drop("Survived")
-   // val target=inputs.select("Survived")
-
-    //target.show()
+   val inputs=dropVals.drop("Survived")
+   val target=dropVals.select("Survived")
+    inputs.show(5)
+    target.show(5)
 
 
 
