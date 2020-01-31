@@ -9,7 +9,13 @@ object TitanicPrediction {
       val spark=SparkSession.builder().appName("ML").getOrCreate()
 
    // val df =spark.read.csv("src/main/resources/ml/titanic.csv")
-   val df =spark.read.csv("/user/hdfs/data/titanic.csv")
+   val df =spark
+     .read
+       .option("header","true")
+     .option("inferSchema","true")
+     .csv("/user/hdfs/data/titanic.csv")
+
+
     df.printSchema()
     df.head()
 
