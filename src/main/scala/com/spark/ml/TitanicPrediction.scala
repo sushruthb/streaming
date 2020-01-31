@@ -19,8 +19,8 @@ object TitanicPrediction {
     df.printSchema()
     df.head()
 
-    df.drop("PassengerId","Name","SibSp","Parch","Ticket","Cabin","Embarked")
-    df.show(5)
+    val dropVals=df.drop("PassengerId","Name","SibSp","Parch","Ticket","Cabin","Embarked")
+    dropVals.show(5)
 
    // val inputs=df.drop("Survived")
    // val target=inputs.select("Survived")
