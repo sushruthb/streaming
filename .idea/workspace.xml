@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/TitanicPrediction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/ml/TitanicPrediction.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,11 +194,11 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2645" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580120488834" />
-    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580296773263">
+    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580540094586">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1580296773263" />
-    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1577770924314" />
+    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1580540094586" />
     <state x="2552" y="147" key="FileChooserDialogImpl" timestamp="1580199665702">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>

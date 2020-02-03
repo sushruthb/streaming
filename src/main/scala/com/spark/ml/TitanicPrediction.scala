@@ -27,6 +27,9 @@ object TitanicPrediction {
     inputs.show(5)
     target.show(5)
 
+    val dummies=inputs.select("sex")
+    dummies.head(3)
+
 
 
 
