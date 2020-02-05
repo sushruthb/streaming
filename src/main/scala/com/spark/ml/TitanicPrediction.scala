@@ -6,8 +6,6 @@ import org.apache.spark.ml._
 import org.apache.spark.ml.feature._
 import org.apache.spark.ml.classification.RandomForestClassifier
 import org.apache.spark.ml.tuning.ParamGridBuilder
-/*import org.apache.spark.sql.functions._
-import org.apache.spark.mllib.evaluation.MulticlassMetrics*/
 import com.spark.ml.MLUtils.accuracyScore
 import org.apache.spark.ml.param.ParamMap
 import org.apache.spark.sql.DataFrame
