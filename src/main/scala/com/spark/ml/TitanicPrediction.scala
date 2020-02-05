@@ -88,7 +88,7 @@ object TitanicPrediction {
       val stringIndexer = new StringIndexer().setInputCol(column)
         .setOutputCol(s"${column}_index")
         .setHandleInvalid("skip")
-      val oneHot = new OneHotEncoderEstimator().setInputCols(s"${column}_index").setOutputCols(s"${column}_onehot")
+      val oneHot = new OneHotEncoderEstimator().setInputCols(Array(s"${column}_index")).setOutputCols(Array(s"${column}_onehot"))
       Array(stringIndexer, oneHot)
     }
 
