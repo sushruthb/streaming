@@ -16,15 +16,17 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_spire_math_spire_macros_2_11_0_13_0_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_machinist_2_11_0_6_1_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_macro_compat_2_11_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$1b7c5d6287d09a6abb10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/spark/ml/MLUtils.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$1b7c5d6287d09a6abb10$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$1b7c5d6287d09a6abb10.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/TitanicPrediction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/TitanicPrediction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/ml/TitanicPrediction.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

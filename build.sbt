@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % "2.3.2",
   "org.apache.spark" %% "spark-hive" % "2.3.2",
   "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.3.2",
-  "org.apache.spark" %% "spark-mllib" % "2.3.2" % "runtime",
+  "org.apache.spark" %% "spark-mllib" % "2.3.2",
   // https://mvnrepository.com/artifact/com.databricks/spark-avro
   "com.databricks" %% "spark-avro" % "4.0.0",
   "com.typesafe" % "config" % "1.3.2",
