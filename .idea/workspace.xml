@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_chuusai_shapeless_2_11_2_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_fommil_netlib_core_1_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_rwl_jtransforms_2_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_github_scopt_scopt_2_11_3_7_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sourceforge_f2j_arpack_combined_all_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_graphx_2_11_2_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_mllib_2_11_2_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_mllib_local_2_11_2_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalanlp_breeze_2_11_0_13_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalanlp_breeze_macros_2_11_0_13_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_spire_math_spire_2_11_0_13_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_spire_math_spire_macros_2_11_0_13_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_machinist_2_11_0_6_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_macro_compat_2_11_1_1_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$106d2b2b3d55d6b2726a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/TitanicPrediction.scala" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
@@ -39,31 +62,42 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spark-examples-master/spark2.3-avro-examples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/com/spark" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SAP\Spark-ML\streaming\src\main\scala\com\spark" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\ml" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JsonRead">
-    <configuration name="AggregationOperation" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.LinearRegressionExample">
+    <configuration name="AFTSurvivalRegressionExample" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.dataframe.AggregationOperation" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.ml.AFTSurvivalRegressionExample" />
       <module name="StructuredToKafka" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicOperations" type="Application" factoryName="Application" temporary="true">
+    <configuration name="BinarizerExample" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.sql.BasicOperations" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.ml.BinarizerExample" />
+      <module name="StructuredToKafka" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataFrameExample" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.ml.DataFrameExample" />
       <module name="StructuredToKafka" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <method v="2">
@@ -80,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TitanicPrediciton" type="Application" factoryName="Application" temporary="true">
+    <configuration name="LinearRegressionExample" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.ml.TitanicPrediction" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.ml.LinearRegressionExample" />
       <module name="StructuredToKafka" />
-      <shortenClasspath name="MANIFEST" />
+      <shortenClasspath name="CLASSPATH_FILE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,10 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinearRegressionExample" />
+        <item itemvalue="Application.AFTSurvivalRegressionExample" />
+        <item itemvalue="Application.BinarizerExample" />
+        <item itemvalue="Application.DataFrameExample" />
         <item itemvalue="Application.JsonRead" />
-        <item itemvalue="Application.TitanicPrediciton" />
-        <item itemvalue="Application.BasicOperations" />
-        <item itemvalue="Application.AggregationOperation" />
       </list>
     </recent_temporary>
   </component>
@@ -136,8 +171,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4734966375271" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="1657739080" />
+        <entry key="$PROJECT_DIR$" value="4735553742755" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1140263786" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="3333014633" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
@@ -199,6 +234,10 @@
     </state>
     <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1580296773263" />
     <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1580540094586" />
+    <state x="2681" y="454" width="397" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580724259274">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2681" y="454" width="397" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580724259274" />
     <state x="2552" y="147" key="FileChooserDialogImpl" timestamp="1580199665702">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -245,6 +284,10 @@
     </state>
     <state x="2102" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580199673466" />
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577785377906" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1580878264194">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580878264194" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
