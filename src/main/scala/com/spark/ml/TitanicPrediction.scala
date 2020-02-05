@@ -82,6 +82,8 @@ object TitanicPrediction {
     val fareMeanValue = df.agg(mean(df("Fare"))).first.getDouble(0)
     val fixedOutputDf = testDf.na.fill(meanValue, Array("age")).na.fill(fareMeanValue, Array("Fare"))
     generateOutputFile(fixedOutputDf, cvModel)
+
+    spark.stop()
   }
 
     def handleCategorical(column: String): Array[PipelineStage] = {
