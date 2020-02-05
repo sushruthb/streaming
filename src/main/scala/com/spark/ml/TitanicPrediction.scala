@@ -13,7 +13,7 @@ import org.apache.spark.ml.param.ParamMap
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
 import org.apache.spark.sql.types.IntegerType
-
+import org.apache.spark.ml.feature.OneHotEncoderEstimator
 import org.apache.spark.ml.tuning.CrossValidator
 
 import org.apache.spark.sql.functions._
