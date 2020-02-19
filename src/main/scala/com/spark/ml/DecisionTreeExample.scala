@@ -32,7 +32,7 @@ import org.apache.spark.ml.linalg.Vector
 import org.apache.spark.ml.regression.{DecisionTreeRegressionModel, DecisionTreeRegressor}
 import org.apache.spark.ml.util.MetadataUtils
 import org.apache.spark.mllib.evaluation.{MulticlassMetrics, RegressionMetrics}
-import org.apache.spark.mllib.util.MLUtils
+import com.spark.ml.MLUtils
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 /**

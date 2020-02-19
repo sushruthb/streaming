@@ -6,6 +6,7 @@ import com.spark.ml.{AbstractParams, DecisionTreeExample}
 import org.apache.spark.ml.regression.LinearRegression
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import scopt.OptionParser
+import com.spark.ml.MLUtils
 
 
 class LogisticRegressionExample {
