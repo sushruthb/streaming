@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +40,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/com/spark" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.anaconda" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SAP\Spark-ML\streaming\src\main\scala\com\spark\ml" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\scala\com\spark" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\ml" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinearRegressionExample">
+  <component name="RunManager" selected="Scala REPL.Scala REPL">
     <configuration name="AFTSurvivalRegressionExample" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -82,16 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonRead" type="Application" factoryName="Application" temporary="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.struct.json.JsonRead" />
-      <module name="StructuredToKafka" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LinearRegressionExample" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -112,13 +103,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="StructuredToKafka" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Scala REPL.Scala REPL" />
+        <item itemvalue="Application.BinarizerExample" />
         <item itemvalue="Application.LinearRegressionExample" />
         <item itemvalue="Application.AFTSurvivalRegressionExample" />
-        <item itemvalue="Application.BinarizerExample" />
         <item itemvalue="Application.DataFrameExample" />
-        <item itemvalue="Application.JsonRead" />
       </list>
     </recent_temporary>
   </component>
@@ -215,26 +216,30 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2681" y="454" width="397" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580724259274" />
-    <state x="2552" y="147" key="FileChooserDialogImpl" timestamp="1580199665702">
+    <state x="2552" y="147" key="FileChooserDialogImpl" timestamp="1581587699590">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2552" y="147" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580199665702" />
+    <state x="2552" y="147" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587699590" />
     <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1577785370070" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1577852297819">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1581587785642">
+      <screen x="1920" y="0" width="1920" height="1160" />
     </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785642" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1577852297819">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1581587785642">
+      <screen x="1920" y="0" width="1920" height="1160" />
     </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785642" />
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1577852297819">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1581587785641">
+      <screen x="1920" y="0" width="1920" height="1160" />
     </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785641" />
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1577852297819">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1581587785642">
+      <screen x="1920" y="0" width="1920" height="1160" />
     </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785642" />
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1577852211366">
       <screen x="0" y="0" width="1280" height="680" />
@@ -261,6 +266,10 @@
     </state>
     <state x="2102" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580199673466" />
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577785377906" />
+    <state x="2262" y="308" key="new project wizard" timestamp="1581587782202">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2262" y="308" key="new project wizard/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587782202" />
     <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1580878264194">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
