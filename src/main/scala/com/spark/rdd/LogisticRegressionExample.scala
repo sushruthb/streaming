@@ -1,6 +1,6 @@
 package com.spark.rdd
 
-import com.spark.ml.{AbstractParams, DecisionTreeExample}
+import com.spark.ml.AbstractParams
 import org.apache.spark.ml.regression.LinearRegression
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import scopt.OptionParser
