@@ -8,7 +8,9 @@ object PredictTitanic {
 
     Logger.getLogger("org").getLevel(Level.ERROR)
 
-    val spark=SparkSession.builder().appName("TitanicPrediction").getOrCreate()
+    val spark=SparkSession.builder()
+      //.config( "spark.driver.bindAddress", "127.0.0.1" )
+      .appName("TitanicPrediction").getOrCreate()
 
     val df=spark.read.csv("/user/hdfs/data/titanic.csv")
     df.show(4)
