@@ -6,7 +6,7 @@ object PredictTitanic {
 
   def main(args:Array[String]): Unit ={
 
-    Logger.getLogger("org").getLevel(Level.ERROR)
+    Logger.getLogger("org").setLevel(Level.ERROR)
 
     val spark=SparkSession.builder()
       //.config( "spark.driver.bindAddress", "127.0.0.1" )

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/DecisionTreeExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/LogisticRegresssionExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/rdd/LogisticRegressionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/rdd/LogisticRegressionExample.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,10 +219,10 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2681" y="454" width="397" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580724259274" />
-    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582096416455">
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582096899895">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1582096416455" />
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1582096899895" />
     <state x="2552" y="147" key="FileChooserDialogImpl" timestamp="1581587699590">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
