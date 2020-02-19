@@ -12,7 +12,11 @@ object PredictTitanic {
       //.config( "spark.driver.bindAddress", "127.0.0.1" )
       .appName("TitanicPrediction").getOrCreate()
 
-    val df=spark.read.csv("/user/hdfs/data/titanic.csv")
+    val df=spark.read
+      .option("header","true")
+      .option("inferSchema","true")
+      .csv("/user/hdfs/data/titanic.csv")
+
     df.show(4)
 
   }
