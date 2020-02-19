@@ -30,7 +30,7 @@ object PredictTitanic {
       .setInputCol("Fare")
       .setOutputCol("Fare_n")
 
-    val indexed=indexer.fit(df).transform(df)
+    val indexed=indexer.fit(inputs).transform(inputs)
     indexed.show(5)
 
   }
