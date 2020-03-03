@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/person.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/avro/person.avsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/PredictTitanic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/ml/PredictTitanic.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,23 +43,37 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.anaconda" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/avro" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\avro" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\avro" />
+      <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\ml" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\scala\com\spark\ml" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\scala\com\spark" />
-      <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\ml" />
     </key>
   </component>
-  <component name="RunManager" selected="Scala REPL.Scala REPL">
-    <configuration name="AFTSurvivalRegressionExample" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.AvroSchema">
+    <configuration name="AvroSchema" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.ml.AFTSurvivalRegressionExample" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.avro.AvroSchema" />
+      <module name="StructuredToKafka" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AvroWrite" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.avro.AvroWrite" />
       <module name="StructuredToKafka" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <method v="2">
@@ -73,20 +90,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataFrameExample" type="Application" factoryName="Application" temporary="true">
+    <configuration name="MovieRatings" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.ml.DataFrameExample" />
-      <module name="StructuredToKafka" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinearRegressionExample" type="Application" factoryName="Application" temporary="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.spark.ml.LinearRegressionExample" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.ml.MovieRatings" />
       <module name="StructuredToKafka" />
       <shortenClasspath name="CLASSPATH_FILE" />
       <method v="2">
@@ -115,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AvroSchema" />
+        <item itemvalue="Application.AvroWrite" />
+        <item itemvalue="Application.MovieRatings" />
         <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.BinarizerExample" />
-        <item itemvalue="Application.LinearRegressionExample" />
-        <item itemvalue="Application.AFTSurvivalRegressionExample" />
-        <item itemvalue="Application.DataFrameExample" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +157,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4735730487678" />
+        <entry key="$PROJECT_DIR$" value="4737471359009" />
         <entry key="$PROJECT_DIR$/build.sbt" value="505621565" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="3333014633" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
@@ -194,25 +201,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="368" y="44" width="547" height="592" key="#TitanicPrediciton/0.0.1280.680@0.0.1280.680" timestamp="1577769795208" />
-    <state x="2477" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579782525632">
+    <state x="2477" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582625311934">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1579513703400" />
-    <state x="2477" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1579782525632" />
+    <state x="2477" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1582625311934" />
     <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1579665119856" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577770078054">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582700941575">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1577770078054" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582700941575" />
     <state x="2645" y="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580120488834">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2645" y="391" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580120488834" />
-    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580540094586">
+    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582694245032">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1580296773263" />
-    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1580540094586" />
+    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1582694245032" />
     <state x="2681" y="454" width="397" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580724259274">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -226,26 +233,26 @@
     </state>
     <state x="2552" y="147" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587699590" />
     <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1577785370070" />
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1581587785642">
+    <state width="1877" height="143" key="GridCell.Tab.0.bottom" timestamp="1582628039592">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785642" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
-    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1581587785642">
+    <state width="1877" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1582628039592" />
+    <state width="1237" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582558628788" />
+    <state width="1877" height="143" key="GridCell.Tab.0.center" timestamp="1582628039591">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785642" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
-    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1581587785641">
+    <state width="1877" height="143" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1582628039591" />
+    <state width="1237" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582558628788" />
+    <state width="1877" height="143" key="GridCell.Tab.0.left" timestamp="1582628039591">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785641" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
-    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1581587785642">
+    <state width="1877" height="143" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1582628039591" />
+    <state width="1237" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582558628788" />
+    <state width="1877" height="143" key="GridCell.Tab.0.right" timestamp="1582628039592">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587785642" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1577852297819" />
+    <state width="1877" height="143" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1582628039592" />
+    <state width="1237" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582558628788" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1577852211366">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -271,14 +278,15 @@
     </state>
     <state x="2102" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580199673466" />
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577785377906" />
-    <state x="2262" y="308" key="new project wizard" timestamp="1581587782202">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state x="181" y="99" key="new project wizard" timestamp="1582695542869">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2262" y="308" key="new project wizard/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1581587782202" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1580878264194">
+    <state x="181" y="99" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1582695542869" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1582102761099">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1580878264194" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1582102761099" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

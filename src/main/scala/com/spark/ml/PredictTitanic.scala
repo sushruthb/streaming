@@ -22,16 +22,10 @@ object PredictTitanic {
     val target=df.select("Survived")
 
     val features=inputs
-    val indexer=new StringIndexer()
-      .setInputCol("Sex")
-      .setOutputCol("Sex_n")
-      .setInputCol("Age")
-      .setOutputCol("Age_n")
-      .setInputCol("Fare")
-      .setOutputCol("Fare_n")
 
-    val indexed=indexer.fit(inputs).transform(inputs)
-    indexed.show(5)
+
+
+
 
   }
 
