@@ -2,6 +2,7 @@ package com.spark.avro
 
 import org.apache.log4j._
 import org.apache.spark.sql.{SaveMode, SparkSession}
+import com.databricks.spark.avro._
 
 object AvroRead {
 
@@ -12,7 +13,7 @@ object AvroRead {
     val df=spark.read.format("com.databricks.spark.avro").load("/user/hdfs/users.avro")
     df.show()
     df.write
-      .format("com.databricks.spark.avro")
+      .format("avro")
       .mode(SaveMode.Overwrite)
       .save("/user/hdfs/avro/users.avro")
 
