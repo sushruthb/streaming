@@ -9,7 +9,7 @@ object AvroRead {
     Logger.getLogger("org").setLevel(Level.ERROR)
     val spark=SparkSession.builder().enableHiveSupport().appName("AvroRead").getOrCreate()
 
-    val df=spark.read.format("com.databricks.spark.avro").load("src/main/resources/users.avro")
+    val df=spark.read.format("com.databricks.spark.avro").load("/user/hdfs/users.avro")
     df.show()
     df.write
       .format("com.databricks.spark.avro")

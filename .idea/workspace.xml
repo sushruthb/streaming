@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/person.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/avro/person.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/ml/PredictTitanic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/ml/PredictTitanic.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +46,17 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\avro" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\avro" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\ml" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\scala\com\spark\ml" />
       <recent name="C:\SAP\Spark-ML\streaming\src\main\scala\com\spark" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spark.avro" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SAP\Spark-ML\streaming\src\main\resources\avro" />
     </key>
   </component>
   <component name="RunManager" selected="Application.AvroSchema">
