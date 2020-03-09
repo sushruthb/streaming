@@ -29,7 +29,7 @@ object DataStreamer extends App with LoggerHelper {
   info("Streaming words to kafka..")
   system.scheduler.schedule(0 seconds, 1 seconds) {
     Random.shuffle(randomWords).foreach { word =>
-      producer.send(new ProducerRecord[String, String]("topic", word))
+      producer.send(new ProducerRecord[String, String]("topic2", word))
     }
   }
 
