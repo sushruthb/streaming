@@ -1,14 +1,12 @@
 package com.struct.kafka
 
-import java.util.UUID
-
 import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.{SaveMode, SparkSession}
 import org.apache.spark.sql.execution.streaming.FileStreamSource.Timestamp
 import org.apache.spark.sql.types._
+import org.apache.spark.sql.{SaveMode, SparkSession}
 
-object ReadFromKafka {
+object ReadSaveToHDFS {
 
  def main(args:Array[String]): Unit ={
     Logger.getLogger("org").setLevel(Level.ERROR)
@@ -54,12 +52,13 @@ object ReadFromKafka {
       .start()
       .awaitTermination()
 
-   val result = df1.toDF("Word", "Count")
-   result.coalesce(1)
+   val result = df1.toDF("value","timestamp")
+
+   result.coalesce(3)
      .write
      .format("com.databricks.spark.avro")
      .mode(SaveMode.Append)
-     .save("/user/hdfs/data")
+     .save("/user/hdfs/data/avro")
 
 
 

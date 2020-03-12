@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e70554-0c1c-4c34-967f-db99b7e091eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_streaming_kafka_0_10_2_11_2_4_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_streaming_kafka_0_10_2_11_2_3_2_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_tags_2_11_2_4_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_spark_spark_tags_2_11_2_3_2_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StructuredToKafka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1b7c5d6287d09a6abb10$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1b7c5d6287d09a6abb10.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1b7c5d6287d09a6abb10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/streaming/kafka/DataStreamer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/streaming/kafka/DataStreamer.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,10 +203,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="368" y="44" width="547" height="592" key="#TitanicPrediciton/0.0.1280.680@0.0.1280.680" timestamp="1577769795208" />
-    <state x="2477" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582625311934">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583989103520">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1579513703400" />
+    <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1583989103520" />
     <state x="2477" y="171" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1582625311934" />
     <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1579665119856" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582700941575">
